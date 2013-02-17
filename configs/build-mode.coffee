@@ -27,7 +27,7 @@ setProdMode = (config) ->
   # Set up ignored (preseve existing ignored)
   config.conventions ?= {}
   {ignored} = config.conventions
-  ignored ?= ->
+  ignored ?= (file) ->
     basename(file).indexOf '_' is 0
   config.conventions.ignored = (file) ->
     return true if /^test/.test(file)
