@@ -1,0 +1,73 @@
+{
+  "name": "package-name",
+  "author": "Your Name",
+  "version": "0.0.1",
+  "homepage": "",
+  "description": "Package description",
+
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+
+  "engines": {
+    "node": "~0.6.10 || 0.8 || 0.9"
+  },
+  
+  "scripts": {
+    "start": "./node_modules/.bin/cake help:npm",
+
+    "gen:model":            "./node_modules/.bin/cake gen:model",
+    "gen:route":            "./node_modules/.bin/cake gen:route",
+    "gen:controller":       "./node_modules/.bin/cake gen:controller",
+    "gen:controller:array": "./node_modules/.bin/cake gen:controller:array",
+    "gen:view":             "./node_modules/.bin/cake gen:view",
+    "gen:template":         "./node_modules/.bin/cake gen:template",
+    "gen:partial":          "./node_modules/.bin/cake gen:partial",
+    "gen:test":             "./node_modules/.bin/cake gen:test",
+
+    "del:model":            "./node_modules/.bin/cake del:model",
+    "del:route":            "./node_modules/.bin/cake del:route",
+    "del:controller":       "./node_modules/.bin/cake del:controller",
+    "del:controller:array": "./node_modules/.bin/cake del:controller:array",
+    "del:view":             "./node_modules/.bin/cake del:view",
+    "del:template":         "./node_modules/.bin/cake del:template",
+    "del:partial":          "./node_modules/.bin/cake del:partial",
+    "del:test":             "./node_modules/.bin/cake del:test",
+
+    "build:dev":   "./node_modules/.bin/cake build:dev",
+    "build:prod":  "./node_modules/.bin/cake build:prod",
+    "watch:dev":   "./node_modules/.bin/cake watch:dev",
+    "watch:prod":  "./node_modules/.bin/cake watch:prod",
+    "server:dev":  "./node_modules/.bin/cake server:dev",
+    "server:prod": "./node_modules/.bin/cake server:prod",
+
+    "test": "./node_modules/.bin/cake test"
+  },
+
+  "dependencies": {
+    "brunch": "1.5.3",
+    "wrench": "1.4.4",
+    "commander": "1.1.1",
+    "coffee-script": "1.4.0",
+
+    "javascript-brunch": ">= 1.0 < 1.6",
+    "coffee-script-brunch": ">= 1.0 < 1.6",
+    "coffeelint-brunch": ">= 1.0 < 1.6",
+
+    "css-brunch": ">= 1.0 < 1.6",
+
+    "ember-precompiler-brunch": ">= 1.0 < 1.6",
+
+    "uglify-js-brunch": ">= 1.0 < 1.6",
+    "clean-css-brunch": ">= 1.0 < 1.6",
+    "auto-reload-brunch": ">= 1.0 < 1.6"
+  },
+
+  "devDependencies": {
+    "chai": "1.5.0",
+    "sinon": "1.5.2",
+    "sinon-chai": "2.3.1",
+    "jsdom": "0.5.0"
+  }
+}

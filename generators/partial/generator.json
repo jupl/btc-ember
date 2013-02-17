@@ -1,0 +1,9 @@
+{
+  "files": [
+    {
+      "from": "partial.hbs.hbs",
+      "to": "app/templates/_{{name}}.hbs"
+    }
+  ],
+  "dependencies": []
+}
