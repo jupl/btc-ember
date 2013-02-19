@@ -49,7 +49,9 @@ Generate/destroy an [Ember Handlebars template](http://emberjs.com/guides/templa
 Generate/destroy an Ember Handlebars partial template.
 
 ### Building
-These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS and omit tests.
+These commands are used to assemble the application, generating the necessary JS/CSS and adding assets.
+* Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Ember's developer build is used.
+* Use `prod` mode to minify/uglify JS/CSS and omit tests. Ember's production build is used.
 
 #### `build:[mode]`
 Assemble the application once.

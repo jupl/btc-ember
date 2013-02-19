@@ -14,6 +14,7 @@ exports.config =
           'vendor/scripts/common/jquery.js'
           'vendor/scripts/ember/handlebars.js'
           'vendor/scripts/ember/ember.js'
+          'vendor/scripts/ember/ember.prod.js'
         ]
         after: []
 
