@@ -24,7 +24,7 @@ setDevMode = (config) ->
 
   config
 
-# Modify given config so that test files are ignored and ignore Ember dev build
+# Modify given config so that test files are ignored and ignore Ember debug build
 setProdMode = (config) ->
   addIgnored config, /^test/, 'vendor/scripts/ember/ember.js'
   config
