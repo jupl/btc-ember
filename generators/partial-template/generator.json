@@ -1,7 +1,7 @@
 {
   "files": [
     {
-      "from": "partial.hbs.hbs",
+      "from": "template.hbs.hbs",
       "to": "app/templates/_{{name}}.hbs"
     }
   ],

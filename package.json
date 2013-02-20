@@ -23,7 +23,7 @@
     "gen:controller:array": "./node_modules/.bin/cake gen:controller:array",
     "gen:view":             "./node_modules/.bin/cake gen:view",
     "gen:template":         "./node_modules/.bin/cake gen:template",
-    "gen:partial":          "./node_modules/.bin/cake gen:partial",
+    "gen:template:partial": "./node_modules/.bin/cake gen:template:partial",
     "gen:test":             "./node_modules/.bin/cake gen:test",
 
     "del:model":            "./node_modules/.bin/cake del:model",
@@ -32,7 +32,7 @@
     "del:controller:array": "./node_modules/.bin/cake del:controller:array",
     "del:view":             "./node_modules/.bin/cake del:view",
     "del:template":         "./node_modules/.bin/cake del:template",
-    "del:partial":          "./node_modules/.bin/cake del:partial",
+    "del:template:partial": "./node_modules/.bin/cake del:template:partial",
     "del:test":             "./node_modules/.bin/cake del:test",
 
     "build:dev":   "./node_modules/.bin/cake build:dev",

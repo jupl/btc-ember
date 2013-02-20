@@ -12,7 +12,7 @@ module.exports = class Generate extends Exec
   arrayController:  ({name}) => @_generate 'array-controller', name
   view:             ({name}) => @_generate 'view', name
   template:         ({name}) => @_generate 'template', name
-  partial:          ({name}) => @_generate 'partial', name
+  partialTemplate:  ({name}) => @_generate 'partial-template', name
   test:             ({name}) => @_generate 'test', name
 
   _generate: (type, name) ->
@@ -41,6 +41,8 @@ module.exports = class Generate extends Exec
     prompt = switch type
       when 'array-controller'
         "\nEnter name for controller: "
+      when 'partial-template'
+        "\nEnter name for partial template: "
       else
         "\nEnter name for #{type}: "
     commander.prompt prompt, callback

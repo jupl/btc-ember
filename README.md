@@ -45,7 +45,7 @@ Generate/destroy an [Ember view](http://emberjs.com/guides/views/defining-a-view
 #### `gen:template` / `del:template`
 Generate/destroy an [Ember Handlebars template](http://emberjs.com/guides/templates/handlebars-basics/).
 
-#### `gen:partial` / `del:partial`
+#### `gen:template:partial` / `del:template:partial`
 Generate/destroy an Ember Handlebars partial template.
 
 #### `gen:test` / `del:test`

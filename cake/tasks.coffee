@@ -36,9 +36,9 @@ module.exports =
       description:  'Generate an Ember Handlebars template'
       task:         tasks.generate.template
     partial:
-      command:      'gen:partial'
+      command:      'gen:template:partial'
       description:  'Generate an Ember Handlebars partial template'
-      task:         tasks.generate.partial
+      task:         tasks.generate.partialTemplate
     test:
       command:      'gen:test'
       description:  'Generate a Mocha test file\n'
