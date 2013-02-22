@@ -5,7 +5,7 @@ Cinder Brunch is a skeleton for building web applications, specifically single-p
 
 
 ## About
-Cinder Brunch uses the [Ember.js](http://emberjs.com/) framework with [CoffeeScript](http://coffeescript.org/). With this skeleton, one does not need to worry about `require` statements when it comes to Ember modules while still wrapped in a function to better avoid global namespace pollution. This skeleton is not styling dependent, allowing one to use any style language they want. When building the proper Ember build (debug/production) will be used when assembling.
+Cinder Brunch uses the [Ember.js](http://emberjs.com/) framework with [CoffeeScript](http://coffeescript.org/). With this skeleton, one does not need to worry about `require` statements when it comes to Ember modules while still wrapped in a function to better avoid global namespace pollution. This skeleton is not styling dependent, allowing one to use any style language they want. ([Here is a variant with Sass/Compass](https://github.com/jupl/cinder-brunch/tree/sass)) When building the proper Ember build (debug/production) will be used when assembling.
 
 
 ## Requirements
