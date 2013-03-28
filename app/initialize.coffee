@@ -1,1 +1,4 @@
-App.advanceReadiness()
+initialize = ->
+  App.advanceReadiness()
+
+$ initialize

@@ -1,4 +1,4 @@
 {config} = require '../config'
 setMode = require './build-mode'
-setMode 'dev', config
+setMode 'production', config
 exports.config = config

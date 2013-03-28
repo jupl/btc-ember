@@ -1,19 +1,5 @@
 tasks = require './cake/tasks'
 
-##############################################################################
-# Task options
-##############################################################################
-
-option '-n',
-  '--name [NAME]',
-  "provide the name for a gen: task to bypass prompt"
-
-
-
-##############################################################################
-# Generate tasks
-##############################################################################
-
 generateTasks = (taskObject) ->
   return unless typeof taskObject is 'object'
   if taskObject.command? and taskObject.description? and taskObject.task?

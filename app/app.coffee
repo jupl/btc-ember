@@ -1,4 +1,5 @@
 window.App = Ember.Application.create()
-
 App.deferReadiness()
-App.Store = DS.Store.extend(revision: 11)
+
+# Uncomment below line if using Ember Data
+# App.Store = DS.Store.extend(revision: 11)

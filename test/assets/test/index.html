@@ -7,9 +7,16 @@
   <script src="../javascripts/vendor.js"></script>
   <script src="../javascripts/app.js"></script>
   <script src="javascripts/tests.js"></script>
-  <script>$(mocha.run);</script>
+
+  <script>
+    App.rootElement = '#mocha-app-body'
+    $(mocha.run);
+    require('initialize');
+  </script>
+  <style>#mocha-app-body { display: none; }</style>
 </head>
 <body>
   <div id="mocha"></div>
+  <div id="mocha-app-body"></div>
 </body>
 </html>
