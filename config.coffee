@@ -1,6 +1,7 @@
+_s = require 'underscore.string'
+{basename} = require 'path'
+
 exports.config =
-  paths:
-    public: 'build/web'
 
   files:
     javascripts:
@@ -15,12 +16,19 @@ exports.config =
           'vendor/scripts/ember/handlebars.js'
           'vendor/scripts/ember/ember.js'
           'vendor/scripts/ember/ember.prod.js'
+          'vendor/scripts/bootstrap/bootstrap-tooltip.js'
         ]
         after: []
 
     stylesheets:
       joinTo:
         'stylesheets/app.css': /^(app|vendor)/
+      order:
+        before: [
+          'app/app.less'
+          'vendor/styles/bootstrap/bootstrap.less'
+        ]
+        after: ['vendor/styles/bootstrap/responsive.less']
 
     templates:
       joinTo: 'javascripts/app.js'
@@ -30,35 +38,27 @@ exports.config =
         handlebars: 'vendor/scripts/ember/handlebars.js'
 
   # If we are wrapping Ember modules, execute these pieces of code immediately
-  #    in a wrapped function so they are added to the App namespace.
+  #    so they are added to the namespace.
   modules:
     wrapper: (path, data, isVendor) ->
-      path = path.replace(/\.\w+$/, '').replace(/^app\//, '')
       if isVendor
         code = "#{data};\n"
-      else if path is 'app' or path is 'router' or path is 'view-helpers' \
-          or /^(controllers|models|routes|templates|views)[\\/]/.test path
-        code  = '(function() {\n'
-        code += '  var module = {};\n' if /^templates/.test path
-        code += """
-          #{data.replace /(\\)?\n(?!\n)/g, ($0, $1) -> if $1 then $0 else '\n  '}
-        })();\n\n
-        """
       else
+        path = path.replace(/\.\w+$/, '').replace(/^app\//, '')
         code = """
         window.require.define({#{JSON.stringify path}: function(exports, require, module) {
           #{data.replace /(\\)?\n(?!\n)/g, ($0, $1) -> if $1 then $0 else '\n  '}
         }});\n\n
         """
+        if path is 'app' or path is 'router' or path is 'view-helpers' \
+            or /^(controllers|models|routes|templates|views|test)[\\/]/.test path
+          code += "window.require(#{JSON.stringify path});\n\n"
       code
 
-  # Ignore Ember template partials.
+  # Don't ignore Ember template partials.
   conventions:
     ignored: (path) ->
-      sysPath = require 'path'
-      startsWith = (string, substring) ->
-        string.indexOf(substring, 0) is 0
       if /^app[\\/]templates/.test path
         false
       else
-        startsWith sysPath.basename(path), '_'
+        _s.startsWith basename(path), '_'

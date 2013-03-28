@@ -1,7 +1,11 @@
 module.exports = class Help
   maxCommandLength: 22
 
-  npm: =>
+  @npm: ->
+    help = new Help
+    help.npm()
+
+  npm: ->
     tasks = require '../tasks'
     
     console.log """
@@ -13,9 +17,9 @@ module.exports = class Help
     Generator commands (gen:) will require a prompt. Command list:
 
     """
-    @_printTasks tasks
+    @printTasks tasks
 
-  _printTasks: (taskObject) ->
+  printTasks: (taskObject) ->
     return unless typeof taskObject is 'object'
     if taskObject.command? and taskObject.description? and taskObject.task?
       command = taskObject.command

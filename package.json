@@ -17,57 +17,63 @@
   "scripts": {
     "start": "./node_modules/.bin/cake help:npm",
 
-    "gen:model":            "./node_modules/.bin/cake gen:model",
-    "gen:route":            "./node_modules/.bin/cake gen:route",
-    "gen:controller":       "./node_modules/.bin/cake gen:controller",
-    "gen:controller:array": "./node_modules/.bin/cake gen:controller:array",
-    "gen:view":             "./node_modules/.bin/cake gen:view",
-    "gen:template":         "./node_modules/.bin/cake gen:template",
-    "gen:template:partial": "./node_modules/.bin/cake gen:template:partial",
-    "gen:test":             "./node_modules/.bin/cake gen:test",
+    "add:bootstrap":  "./node_modules/.bin/cake add:bootstrap",
+    "add:ember:data": "./node_modules/.bin/cake add:ember:data",
 
-    "del:model":            "./node_modules/.bin/cake del:model",
-    "del:route":            "./node_modules/.bin/cake del:route",
-    "del:controller":       "./node_modules/.bin/cake del:controller",
-    "del:controller:array": "./node_modules/.bin/cake del:controller:array",
-    "del:view":             "./node_modules/.bin/cake del:view",
-    "del:template":         "./node_modules/.bin/cake del:template",
-    "del:template:partial": "./node_modules/.bin/cake del:template:partial",
-    "del:test":             "./node_modules/.bin/cake del:test",
+    "rem:bootstrap":  "./node_modules/.bin/cake rem:bootstrap",
+    "rem:ember:data": "./node_modules/.bin/cake rem:ember:data",
+
+    "gen:model:object":       "./node_modules/.bin/cake gen:model:object",
+    "gen:model:ember":        "./node_modules/.bin/cake gen:model:ember",
+    "gen:template":           "./node_modules/.bin/cake gen:template",
+    "gen:template:partial":   "./node_modules/.bin/cake gen:template:partial",
+    "gen:view":               "./node_modules/.bin/cake gen:view",
+    "gen:route":              "./node_modules/.bin/cake gen:route",
+    "gen:controller":         "./node_modules/.bin/cake gen:controller",
+    "gen:controller:object":  "./node_modules/.bin/cake gen:controller:object",
+    "gen:controller:array":   "./node_modules/.bin/cake gen:controller:array",
+    "gen:style":              "./node_modules/.bin/cake gen:style",
+    "gen:test":               "./node_modules/.bin/cake gen:test",
+
+    "del:model:object":       "./node_modules/.bin/cake del:model:object",
+    "del:model:ember":        "./node_modules/.bin/cake del:model:ember",
+    "del:template":           "./node_modules/.bin/cake del:template",
+    "del:template:partial":   "./node_modules/.bin/cake del:template:partial",
+    "del:view":               "./node_modules/.bin/cake del:view",
+    "del:route":              "./node_modules/.bin/cake del:route",
+    "del:controller":         "./node_modules/.bin/cake del:controller",
+    "del:controller:object":  "./node_modules/.bin/cake del:controller:object",
+    "del:controller:array":   "./node_modules/.bin/cake del:controller:array",
+    "del:style":              "./node_modules/.bin/cake del:style",
+    "del:test":               "./node_modules/.bin/cake del:test",
 
     "build:dev":   "./node_modules/.bin/cake build:dev",
     "build:prod":  "./node_modules/.bin/cake build:prod",
     "watch:dev":   "./node_modules/.bin/cake watch:dev",
     "watch:prod":  "./node_modules/.bin/cake watch:prod",
     "server:dev":  "./node_modules/.bin/cake server:dev",
-    "server:prod": "./node_modules/.bin/cake server:prod",
-
-    "test": "./node_modules/.bin/cake test"
+    "server:prod": "./node_modules/.bin/cake server:prod"
   },
 
   "dependencies": {
-    "brunch": "1.5.3",
+    "brunch": "1.6.1",
     "wrench": "1.4.4",
+    "scaffolt": "0.1.1",
     "commander": "1.1.1",
-    "coffee-script": "1.4.0",
+    "coffee-script": "1.6.2",
+    "underscore.string": "2.3.0",
 
     "javascript-brunch": ">= 1.0 < 1.6",
     "coffee-script-brunch": ">= 1.0 < 1.6",
     "coffeelint-brunch": ">= 1.0 < 1.6",
 
     "css-brunch": ">= 1.0 < 1.6",
+    "less-brunch": ">= 1.0 < 1.6",
 
     "ember-precompiler-brunch": ">= 1.0 < 1.6",
 
     "uglify-js-brunch": ">= 1.0 < 1.6",
     "clean-css-brunch": ">= 1.0 < 1.6",
     "auto-reload-brunch": ">= 1.0 < 1.6"
-  },
-
-  "devDependencies": {
-    "chai": "1.5.0",
-    "sinon": "1.5.2",
-    "sinon-chai": "2.3.1",
-    "jsdom": "0.5.0"
   }
 }

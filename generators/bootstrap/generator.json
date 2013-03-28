@@ -1,0 +1,241 @@
+{
+  "files": [
+    {
+      "from": "font/fontawesome-webfont.eot",
+      "to":   "app/assets/font/fontawesome-webfont.eot"
+    },
+    {
+      "from": "font/fontawesome-webfont.svg",
+      "to":   "app/assets/font/fontawesome-webfont.svg"
+    },
+    {
+      "from": "font/fontawesome-webfont.ttf",
+      "to":   "app/assets/font/fontawesome-webfont.ttf"
+    },
+    {
+      "from": "font/fontawesome-webfont.woff",
+      "to":   "app/assets/font/fontawesome-webfont.woff"
+    },
+    {
+      "from": "font/FontAwesome.otf",
+      "to":   "app/assets/font/FontAwesome.otf"
+    },
+    {
+      "from": "less/accordion.less",
+      "to":   "vendor/styles/bootstrap/_accordion.less"
+    },
+    {
+      "from": "less/alerts.less",
+      "to":   "vendor/styles/bootstrap/_alerts.less"
+    },
+    {
+      "from": "less/bootstrap.less",
+      "to":   "vendor/styles/bootstrap/bootstrap.less"
+    },
+    {
+      "from": "less/breadcrumbs.less",
+      "to":   "vendor/styles/bootstrap/_breadcrumbs.less"
+    },
+    {
+      "from": "less/button-groups.less",
+      "to":   "vendor/styles/bootstrap/_button-groups.less"
+    },
+    {
+      "from": "less/buttons.less",
+      "to":   "vendor/styles/bootstrap/_buttons.less"
+    },
+    {
+      "from": "less/carousel.less",
+      "to":   "vendor/styles/bootstrap/_carousel.less"
+    },
+    {
+      "from": "less/close.less",
+      "to":   "vendor/styles/bootstrap/_close.less"
+    },
+    {
+      "from": "less/code.less",
+      "to":   "vendor/styles/bootstrap/_code.less"
+    },
+    {
+      "from": "less/component-animations.less",
+      "to":   "vendor/styles/bootstrap/_component-animations.less"
+    },
+    {
+      "from": "less/dropdowns.less",
+      "to":   "vendor/styles/bootstrap/_dropdowns.less"
+    },
+    {
+      "from": "less/font-awesome.less",
+      "to":   "vendor/styles/bootstrap/_font-awesome.less"
+    },
+    {
+      "from": "less/forms.less",
+      "to":   "vendor/styles/bootstrap/_forms.less"
+    },
+    {
+      "from": "less/grid.less",
+      "to":   "vendor/styles/bootstrap/_grid.less"
+    },
+    {
+      "from": "less/hero-unit.less",
+      "to":   "vendor/styles/bootstrap/_hero-unit.less"
+    },
+    {
+      "from": "less/labels-badges.less",
+      "to":   "vendor/styles/bootstrap/_labels-badges.less"
+    },
+    {
+      "from": "less/layouts.less",
+      "to":   "vendor/styles/bootstrap/_layouts.less"
+    },
+    {
+      "from": "less/media.less",
+      "to":   "vendor/styles/bootstrap/_media.less"
+    },
+    {
+      "from": "less/mixins.less",
+      "to":   "vendor/styles/bootstrap/_mixins.less"
+    },
+    {
+      "from": "less/modals.less",
+      "to":   "vendor/styles/bootstrap/_modals.less"
+    },
+    {
+      "from": "less/navbar.less",
+      "to":   "vendor/styles/bootstrap/_navbar.less"
+    },
+    {
+      "from": "less/navs.less",
+      "to":   "vendor/styles/bootstrap/_navs.less"
+    },
+    {
+      "from": "less/pager.less",
+      "to":   "vendor/styles/bootstrap/_pager.less"
+    },
+    {
+      "from": "less/pagination.less",
+      "to":   "vendor/styles/bootstrap/_pagination.less"
+    },
+    {
+      "from": "less/popovers.less",
+      "to":   "vendor/styles/bootstrap/_popovers.less"
+    },
+    {
+      "from": "less/progress-bars.less",
+      "to":   "vendor/styles/bootstrap/_progress-bars.less"
+    },
+    {
+      "from": "less/reset.less",
+      "to":   "vendor/styles/bootstrap/_reset.less"
+    },
+    {
+      "from": "less/responsive-1200px-min.less",
+      "to":   "vendor/styles/bootstrap/_responsive-1200px-min.less"
+    },
+    {
+      "from": "less/responsive-767px-max.less",
+      "to":   "vendor/styles/bootstrap/_responsive-767px-max.less"
+    },
+    {
+      "from": "less/responsive-768px-979px.less",
+      "to":   "vendor/styles/bootstrap/_responsive-768px-979px.less"
+    },
+    {
+      "from": "less/responsive-navbar.less",
+      "to":   "vendor/styles/bootstrap/_responsive-navbar.less"
+    },
+    {
+      "from": "less/responsive-utilities.less",
+      "to":   "vendor/styles/bootstrap/_responsive-utilities.less"
+    },
+    {
+      "from": "less/responsive.less",
+      "to":   "vendor/styles/bootstrap/responsive.less"
+    },
+    {
+      "from": "less/scaffolding.less",
+      "to":   "vendor/styles/bootstrap/_scaffolding.less"
+    },
+    {
+      "from": "less/tables.less",
+      "to":   "vendor/styles/bootstrap/_tables.less"
+    },
+    {
+      "from": "less/thumbnails.less",
+      "to":   "vendor/styles/bootstrap/_thumbnails.less"
+    },
+    {
+      "from": "less/tooltip.less",
+      "to":   "vendor/styles/bootstrap/_tooltip.less"
+    },
+    {
+      "from": "less/type.less",
+      "to":   "vendor/styles/bootstrap/_type.less"
+    },
+    {
+      "from": "less/utilities.less",
+      "to":   "vendor/styles/bootstrap/_utilities.less"
+    },
+    {
+      "from": "less/variables.less",
+      "to":   "vendor/styles/bootstrap/variables.less"
+    },
+    {
+      "from": "less/wells.less",
+      "to":   "vendor/styles/bootstrap/_wells.less"
+    },
+    {
+      "from": "js/bootstrap-affix.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-affix.js"
+    },
+    {
+      "from": "js/bootstrap-alert.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-alert.js"
+    },
+    {
+      "from": "js/bootstrap-button.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-button.js"
+    },
+    {
+      "from": "js/bootstrap-carousel.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-carousel.js"
+    },
+    {
+      "from": "js/bootstrap-collapse.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-collapse.js"
+    },
+    {
+      "from": "js/bootstrap-dropdown.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-dropdown.js"
+    },
+    {
+      "from": "js/bootstrap-modal.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-modal.js"
+    },
+    {
+      "from": "js/bootstrap-popover.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-popover.js"
+    },
+    {
+      "from": "js/bootstrap-scrollspy.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-scrollspy.js"
+    },
+    {
+      "from": "js/bootstrap-tab.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-tab.js"
+    },
+    {
+      "from": "js/bootstrap-tooltip.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-tooltip.js"
+    },
+    {
+      "from": "js/bootstrap-transition.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-transition.js"
+    },
+    {
+      "from": "js/bootstrap-typeahead.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-typeahead.js"
+    }
+  ],
+  "dependencies": []
+}

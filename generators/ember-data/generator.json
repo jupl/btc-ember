@@ -1,0 +1,9 @@
+{
+  "files": [
+    {
+      "from": "ember-data.js",
+      "to": "vendor/scripts/ember/ember-data.js"
+    }
+  ],
+  "dependencies": []
+}
