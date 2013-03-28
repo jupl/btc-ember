@@ -41,10 +41,10 @@ module.exports =
   gen:
     model:
       command:      'gen:model:object'
-      description:  'Generate an Ember object that represents a model'
+      description:  'Generate an Ember class that represents a model'
       task:         -> do Scaffold.Model.generate
     emberDataModel:
-      command:      'gen:model:data'
+      command:      'gen:model:ember'
       description:  'Generate an Ember Data model'
       task:         -> do Scaffold.EmberDataModel.generate
     template:
@@ -83,10 +83,10 @@ module.exports =
   del:
     model:
       command:      'del:model:object'
-      description:  'Delete an Ember object that represents a model'
+      description:  'Delete an Ember class that represents a model'
       task:         -> do Scaffold.Model.destroy
     emberDataModel:
-      command:      'del:model:data'
+      command:      'del:model:ember'
       description:  'Delete an Ember Data model'
       task:         -> do Scaffold.EmberDataModel.destroy
     template:

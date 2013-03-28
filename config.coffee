@@ -27,7 +27,10 @@ exports.config =
       joinTo:
         'stylesheets/app.css': /^(app|vendor)/
       order:
-        before: ['vendor/styles/bootstrap/bootstrap.less']
+        before: [
+          'app/app.less'
+          'vendor/styles/bootstrap/bootstrap.less'
+        ]
         after: ['vendor/styles/bootstrap/responsive.less']
 
     templates:
