@@ -1,3 +1,6 @@
+_s = require 'underscore.string'
+{basename} = require 'path'
+
 exports.config =
 
   paths:
@@ -55,10 +58,7 @@ exports.config =
   # Don't ignore Ember template partials.
   conventions:
     ignored: (path) ->
-      sysPath = require 'path'
-      startsWith = (string, substring) ->
-        string.indexOf(substring, 0) is 0
       if /^app[\\/]templates/.test path
         false
       else
-        startsWith sysPath.basename(path), '_'
+        _s.startsWith basename(path), '_'
