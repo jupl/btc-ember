@@ -48,20 +48,7 @@ exports.config =
         }});\n\n
         """
         if path is 'app' or path is 'router' or path is 'view-helpers' \
-            or /^(controllers|models|routes|templates|views)[\\/]/.test path
-          code += """
-            if(Ember.testing) {
-              Ember.run.next(function() {
-                Ember.run(function() {
-                  window.require(#{JSON.stringify path});
-                });
-              });
-            }
-            else {
-              window.require(#{JSON.stringify path});
-            }\n\n
-          """
-        else if /^test[\\/]/.test path
+            or /^(controllers|models|routes|templates|views|test)[\\/]/.test path
           code += "window.require(#{JSON.stringify path});\n\n"
       code
 
