@@ -55,6 +55,9 @@ Generate/destroy an [Ember view](http://emberjs.com/guides/views/defining-a-view
 Generate/destroy an [Ember route](http://emberjs.com/guides/routing/defining-your-routes/).
 
 #### `gen:controller` / `del:controller`
+Generate/destroy an [Ember controller](http://emberjs.com/api/classes/Ember.Controller.html).
+
+#### `gen:controller:object` / `del:controller:object`
 Generate/destroy an [Ember object controller](http://emberjs.com/guides/controllers/representing-a-single-model-with-objectcontroller/).
 
 #### `gen:controller:array` / `del:controller:array`

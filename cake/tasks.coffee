@@ -7,6 +7,7 @@ Scaffold =
   PartialTemplate:  require './tasks/scaffolds/partial-template'
   View:             require './tasks/scaffolds/view'
   Route:            require './tasks/scaffolds/route'
+  Controller:       require './tasks/scaffolds/controller'
   ObjectController: require './tasks/scaffolds/object-controller'
   ArrayController:  require './tasks/scaffolds/array-controller'
   Style:            require './tasks/scaffolds/style'
@@ -66,8 +67,12 @@ module.exports =
       task:         -> do Scaffold.Route.generate
     controller:
       command:      'gen:controller'
+      description:  'Generate an Ember controller'
+      task:         -> do Scaffold.Controller.destroy
+    objectController:
+      command:      'gen:controller:object'
       description:  'Generate an Ember object controller'
-      task:         -> do Scaffold.ObjectController.generate
+      task:         -> do Scaffold.ObjectController.destroy
     arrayController:
       command:      'gen:controller:array'
       description:  'Generate an Ember array controller'
@@ -108,6 +113,10 @@ module.exports =
       task:         -> do Scaffold.Route.destroy
     controller:
       command:      'del:controller'
+      description:  'Delete an Ember controller'
+      task:         -> do Scaffold.Controller.destroy
+    objectController:
+      command:      'del:controller:object'
       description:  'Delete an Ember object controller'
       task:         -> do Scaffold.ObjectController.destroy
     arrayController:

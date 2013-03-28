@@ -1,5 +1,5 @@
 module.exports = class Help
-  maxCommandLength: 20
+  maxCommandLength: 22
 
   @npm: ->
     help = new Help
