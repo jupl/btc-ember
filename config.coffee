@@ -1,4 +1,4 @@
-_s = require 'underscore.string'
+require 'sugar'
 {basename} = require 'path'
 
 exports.config =
@@ -61,4 +61,4 @@ exports.config =
       if /^app[\\/]templates/.test path
         false
       else
-        _s.startsWith basename(path), '_'
+        basename(path).startsWith('_')
