@@ -1,4 +1,7 @@
 initialize = ->
   App.advanceReadiness()
 
-$ initialize
+if cordova
+  document.addEventListener 'deviceready', initialize, false
+else
+  $ initialize
