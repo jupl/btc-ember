@@ -3,4 +3,4 @@ Scaffold = require '../../lib/scaffold'
 module.exports = class ArrayController extends Scaffold
 
   promptString: ->
-    super.replace(':', ' (as singular, not plural):')
+    super 'array controller (as singular, not plural)'
