@@ -95,7 +95,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Ember](http://emberjs.com/) 1.0.0rc1
+* [Ember](http://emberjs.com/) 1.0.0rc2
 
 ### Utilities
 * [jQuery](http://jquery.com) 1.9.1
