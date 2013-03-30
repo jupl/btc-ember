@@ -1,4 +1,4 @@
-# Cinder Brunch 0.1.1
+# Cinder Brunch 0.1.2
 
 ## Introduction
 Cinder Brunch is a skeleton for building web applications, specifically single-page applications. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via `cake`.
@@ -118,7 +118,7 @@ Assemble the application, compile, and deploy to an emulator for the specified p
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Ember](http://emberjs.com/) 1.0.0rc1
+* [Ember](http://emberjs.com/) 1.0.0rc2
 
 ### Utilities
 * [jQuery](http://jquery.com) 1.9.1

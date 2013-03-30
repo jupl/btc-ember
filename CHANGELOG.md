@@ -1,5 +1,8 @@
 # Changelog
 
+#### 0.1.2 (March 30, 2013)
+- Update Ember.js to 1.0.0rc2
+
 #### 0.1.1 (March 29, 2013)
 - Update Brunch Toolchain.
 
