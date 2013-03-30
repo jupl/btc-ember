@@ -1,4 +1,4 @@
-# Cinder Brunch 0.1.1
+# Cinder Brunch 0.1.2
 
 ## Introduction
 Cinder Brunch is a skeleton for building web applications, specifically single-page applications. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via `cake`.
