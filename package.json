@@ -19,9 +19,11 @@
 
     "add:bootstrap":  "./node_modules/.bin/cake add:bootstrap",
     "add:ember:data": "./node_modules/.bin/cake add:ember:data",
+    "add:fastclick":  "./node_modules/.bin/cake add:fastclick",
 
     "rem:bootstrap":  "./node_modules/.bin/cake rem:bootstrap",
     "rem:ember:data": "./node_modules/.bin/cake rem:ember:data",
+    "rem:fastclick":  "./node_modules/.bin/cake rem:fastclick",
 
     "gen:model:object":       "./node_modules/.bin/cake gen:model:object",
     "gen:model:ember":        "./node_modules/.bin/cake gen:model:ember",

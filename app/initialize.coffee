@@ -1,4 +1,8 @@
 initialize = ->
+
+  # Add FastClick if available
+  new FastClick?(document.body)
+
   App.advanceReadiness()
 
 if cordova?

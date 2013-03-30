@@ -16,6 +16,7 @@ Scaffold =
 Module =
   Bootstrap: require './tasks/modules/bootstrap'
   EmberData: require './tasks/modules/ember-data'
+  Fastclick: require './tasks/modules/fastclick'
 
 module.exports =
   
@@ -27,8 +28,12 @@ module.exports =
     ember:
       data:
         command:      'add:ember:data'
-        description:  'Add Ember Data\n'
+        description:  'Add Ember Data'
         task:         -> do Module.EmberData.add
+    fastclick:
+      command:      'add:fastclick'
+      description:  'Add FastClick\n'
+      task:         -> do Module.Fastclick.add
 
   rem:
     bootstrap:
@@ -38,8 +43,12 @@ module.exports =
     ember:
       data:
         command:      'rem:ember:data'
-        description:  'Remove Ember Data\n'
+        description:  'Remove Ember Data'
         task:         -> do Module.EmberData.remove
+    fastclick:
+      command:      'rem:fastclick'
+      description:  'Remove FastClick\n'
+      task:         -> do Module.Fastclick.remove
 
   gen:
     model:
