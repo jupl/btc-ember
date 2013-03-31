@@ -78,11 +78,11 @@ module.exports =
     controller:
       command:      'gen:controller'
       description:  'Generate an Ember controller'
-      task:         -> do Scaffold.Controller.destroy
+      task:         -> do Scaffold.Controller.generate
     objectController:
       command:      'gen:controller:object'
       description:  'Generate an Ember object controller'
-      task:         -> do Scaffold.ObjectController.destroy
+      task:         -> do Scaffold.ObjectController.generate
     arrayController:
       command:      'gen:controller:array'
       description:  'Generate an Ember array controller'
