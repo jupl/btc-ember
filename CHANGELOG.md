@@ -2,6 +2,7 @@
 
 #### 0.1.3 (WIP)
 - Enabled Ember.testing when running Mocha tests.
+- Array controller generator no longer auto-pluralizes.
 - Cleanup.
 
 #### 0.1.2 (March 30, 2013)
