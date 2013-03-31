@@ -1,5 +1,8 @@
 # Changelog
 
+#### 0.1.3 (WIP)
+- Enabled Ember.testing when running Mocha tests.
+
 #### 0.1.2 (March 30, 2013)
 - Update Ember.js to 1.0.0rc2
 
