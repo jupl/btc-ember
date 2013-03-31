@@ -11,7 +11,6 @@ exports.config =
       order:
         before: [
           'app/app.coffee'
-          'vendor/scripts/common/console-helper.js'
           'vendor/scripts/common/jquery.js'
           'vendor/scripts/ember/handlebars.js'
           'vendor/scripts/ember/ember.js'
