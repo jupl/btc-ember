@@ -50,7 +50,20 @@ exports.config =
           #{data.replace /(\\)?\n(?!\n)/g, ($0, $1) -> if $1 then $0 else '\n  '}
         }});\n\n
         """
-        if path is 'app' or path is 'router' or path is 'view-helpers' \
+
+        # If we are loading the app module, use Ember.run if in testing
+        if path is 'app'
+          code += """
+          if(Ember.testing) {
+            Ember.run(function() {
+              window.require(#{JSON.stringify path});
+            });
+          }
+          else {
+            window.require(#{JSON.stringify path});
+          }\n\n
+          """
+        else if ['router', 'view-helpers'].any(path) \
             or /^(controllers|models|routes|templates|views|test)[\\/]/.test path
           code += "window.require(#{JSON.stringify path});\n\n"
       code

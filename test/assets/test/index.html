@@ -5,13 +5,22 @@
   <link rel="stylesheet" href="stylesheets/test.css" />
   <script src="javascripts/vendor.js"></script>
   <script src="../javascripts/vendor.js"></script>
+  <script>Ember.testing = true;</script>
   <script src="../javascripts/app.js"></script>
   <script src="javascripts/tests.js"></script>
 
   <script>
-    App.rootElement = '#mocha-app-body'
+    App.rootElement = '#mocha-app-body';
     $(mocha.run);
     require('initialize');
+    (function() {
+      var oldInitialize = initialize;
+      initialize = function() {
+        Ember.run(function() {
+          oldInitialize();
+        });
+      };
+    })();
   </script>
   <style>#mocha-app-body { display: none; }</style>
 </head>
