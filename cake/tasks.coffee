@@ -19,7 +19,7 @@ module.exports =
         command:      'add:bootstrap:responsive'
         description:  'Add Bootstrap responsive'
         task:         -> do Module.Bootstrap.Responsive.add
-      responsive:
+      glyphicons:
         command:      'add:bootstrap:glyphicons'
         description:  'Add Bootstrap glyphicons (removes FontAwesome)'
         task:         -> do Module.Bootstrap.Glyphicons.add
