@@ -1,7 +1,7 @@
 Build = require './tasks/build'
 Help = require './tasks/help'
 Module = 
-  Bootstrap: require './tasks/bootstrap'
+  Bootstrap: require './tasks/modules/bootstrap'
 
 module.exports =
 
