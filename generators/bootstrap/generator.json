@@ -1,0 +1,141 @@
+{
+  "files": [
+    {
+      "from": "less/accordion.less",
+      "to":   "vendor/styles/bootstrap/_accordion.less"
+    },
+    {
+      "from": "less/alerts.less",
+      "to":   "vendor/styles/bootstrap/_alerts.less"
+    },
+    {
+      "from": "less/bootstrap.less",
+      "to":   "vendor/styles/bootstrap/bootstrap.less"
+    },
+    {
+      "from": "less/breadcrumbs.less",
+      "to":   "vendor/styles/bootstrap/_breadcrumbs.less"
+    },
+    {
+      "from": "less/button-groups.less",
+      "to":   "vendor/styles/bootstrap/_button-groups.less"
+    },
+    {
+      "from": "less/buttons.less",
+      "to":   "vendor/styles/bootstrap/_buttons.less"
+    },
+    {
+      "from": "less/carousel.less",
+      "to":   "vendor/styles/bootstrap/_carousel.less"
+    },
+    {
+      "from": "less/close.less",
+      "to":   "vendor/styles/bootstrap/_close.less"
+    },
+    {
+      "from": "less/code.less",
+      "to":   "vendor/styles/bootstrap/_code.less"
+    },
+    {
+      "from": "less/component-animations.less",
+      "to":   "vendor/styles/bootstrap/_component-animations.less"
+    },
+    {
+      "from": "less/dropdowns.less",
+      "to":   "vendor/styles/bootstrap/_dropdowns.less"
+    },
+    {
+      "from": "less/forms.less",
+      "to":   "vendor/styles/bootstrap/_forms.less"
+    },
+    {
+      "from": "less/grid.less",
+      "to":   "vendor/styles/bootstrap/_grid.less"
+    },
+    {
+      "from": "less/hero-unit.less",
+      "to":   "vendor/styles/bootstrap/_hero-unit.less"
+    },
+    {
+      "from": "less/labels-badges.less",
+      "to":   "vendor/styles/bootstrap/_labels-badges.less"
+    },
+    {
+      "from": "less/layouts.less",
+      "to":   "vendor/styles/bootstrap/_layouts.less"
+    },
+    {
+      "from": "less/media.less",
+      "to":   "vendor/styles/bootstrap/_media.less"
+    },
+    {
+      "from": "less/mixins.less",
+      "to":   "vendor/styles/bootstrap/_mixins.less"
+    },
+    {
+      "from": "less/modals.less",
+      "to":   "vendor/styles/bootstrap/_modals.less"
+    },
+    {
+      "from": "less/navbar.less",
+      "to":   "vendor/styles/bootstrap/_navbar.less"
+    },
+    {
+      "from": "less/navs.less",
+      "to":   "vendor/styles/bootstrap/_navs.less"
+    },
+    {
+      "from": "less/pager.less",
+      "to":   "vendor/styles/bootstrap/_pager.less"
+    },
+    {
+      "from": "less/pagination.less",
+      "to":   "vendor/styles/bootstrap/_pagination.less"
+    },
+    {
+      "from": "less/popovers.less",
+      "to":   "vendor/styles/bootstrap/_popovers.less"
+    },
+    {
+      "from": "less/progress-bars.less",
+      "to":   "vendor/styles/bootstrap/_progress-bars.less"
+    },
+    {
+      "from": "less/reset.less",
+      "to":   "vendor/styles/bootstrap/_reset.less"
+    },
+    {
+      "from": "less/scaffolding.less",
+      "to":   "vendor/styles/bootstrap/_scaffolding.less"
+    },
+    {
+      "from": "less/tables.less",
+      "to":   "vendor/styles/bootstrap/_tables.less"
+    },
+    {
+      "from": "less/thumbnails.less",
+      "to":   "vendor/styles/bootstrap/_thumbnails.less"
+    },
+    {
+      "from": "less/tooltip.less",
+      "to":   "vendor/styles/bootstrap/_tooltip.less"
+    },
+    {
+      "from": "less/type.less",
+      "to":   "vendor/styles/bootstrap/_type.less"
+    },
+    {
+      "from": "less/utilities.less",
+      "to":   "vendor/styles/bootstrap/_utilities.less"
+    },
+    {
+      "from": "less/variables.less",
+      "to":   "vendor/styles/bootstrap/variables.less"
+    },
+    {
+      "from": "less/wells.less",
+      "to":   "vendor/styles/bootstrap/_wells.less"
+    }
+  ],
+  "dependencies": []
+}
