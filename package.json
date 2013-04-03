@@ -17,6 +17,16 @@
   "scripts": {
     "start": "./node_modules/.bin/cake help:npm",
 
+    "add:bootstrap":              "./node_modules/.bin/cake add:bootstrap",
+    "add:bootstrap:js":           "./node_modules/.bin/cake add:bootstrap:js",
+    "add:bootstrap:responsive":   "./node_modules/.bin/cake add:bootstrap:responsive",
+    "add:bootstrap:glyphicons":   "./node_modules/.bin/cake add:bootstrap:glyphicons",
+    "add:bootstrap:fontawesome":  "./node_modules/.bin/cake add:bootstrap:fontawesome",
+
+    "rem:bootstrap":              "./node_modules/.bin/cake rem:bootstrap",
+    "rem:bootstrap:js":           "./node_modules/.bin/cake rem:bootstrap:js",
+    "rem:bootstrap:responsive":   "./node_modules/.bin/cake rem:bootstrap:responsive",
+
     "build:dev":    "./node_modules/.bin/cake build:dev",
     "build:prod":   "./node_modules/.bin/cake build:prod",
     "watch:dev":    "./node_modules/.bin/cake watch:dev",
