@@ -2,7 +2,7 @@
 
 ### 0.2.0 (May 19, 2013)
 - Update Brunch Toolchain.
-- Update Ember.js to 1.0.0rc3.
+- Update Ember.js to 1.0.0rc3 and Handlebars to 1.0.0rc4.
 - Update jQuery and Font Awesome.
 - Added Emblem support.
 - Enabled Ember.testing when running Mocha tests.
