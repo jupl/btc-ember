@@ -1,6 +1,7 @@
 # Changelog
 
 #### 0.1.3 (WIP)
+- Update Brunch Toolchain.
 - Enabled Ember.testing when running Mocha tests.
 - Array controller generator no longer auto-pluralizes.
 - Cleanup.
