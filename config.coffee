@@ -35,6 +35,7 @@ exports.config =
         jquery: 'vendor/scripts/common/jquery.js'
         ember: 'vendor/scripts/ember/ember.js'
         handlebars: 'vendor/scripts/ember/handlebars.js'
+        emblem: 'lib/emblem.js'
 
   # If we are wrapping Ember modules, execute these pieces of code immediately
   #    so they are added to the namespace.

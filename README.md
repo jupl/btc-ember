@@ -1,4 +1,4 @@
-# Cinder Brunch 0.1.3
+# Cinder Brunch 0.2.0
 
 ## Introduction
 Cinder Brunch is a skeleton for building web applications, specifically single-page applications. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via `cake`.
@@ -92,6 +92,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
 * [Handlebars](http://handlebarsjs.com/) 1.0.0rc3
+* [Emblem](http://emblemjs.com/) 0.2.6
 * [LESS](http://lesscss.org)
 
 ### Framework
