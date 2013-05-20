@@ -1,4 +1,4 @@
-# Cinder Brunch 0.1.2
+# Cinder Brunch 0.2.0
 
 ## Introduction
 Cinder Brunch is a skeleton for building web applications, specifically single-page applications. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via `cake`.
@@ -22,7 +22,7 @@ Cinder Brunch uses the [Ember.js](http://emberjs.com/) framework with [CoffeeScr
 
 
 ## Command List
-While Brunch commands can be used, cake commands are provided for this skeleton. These tasks can be executed using cake if it is installed. (`cake [command]`) If cake is not installed these commands can also be executed using npm. (`npm run-script [command]`) These are the following commands (this list is accessible using either the command `cake` or `npm start`):
+While Brunch/Scaffolt commands can be used, cake commands are provided for this skeleton. These tasks can be executed using cake if it is installed. (`cake [command]`) If cake is not installed these commands can also be executed using npm. (`npm run-script [command]`) These are the following commands (this list is accessible using either the command `cake` or `npm start`):
 
 ### Extras
 These commands add additional features/items to the project that are not included by default.
@@ -86,25 +86,26 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Details
 
 ### Core
-* [Brunch](http://brunch.io) 1.6.1
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.1
+* [Brunch](http://brunch.io) 1.6.7
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.4
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
 * [Handlebars](http://handlebarsjs.com/) 1.0.0rc3
+* [Emblem](http://emblemjs.com/) 0.2.6
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Ember](http://emberjs.com/) 1.0.0rc2
+* [Ember](http://emberjs.com/) 1.0.0rc3
 
 ### Utilities
-* [jQuery](http://jquery.com) 1.9.1
+* [jQuery](http://jquery.com) 2.0.0
 * [Modernizr](http://modernizr.com/) 2.6.2 (in test)
 
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
 * [Bootstrap](http://getbootstrap.com/) 2.3.1
-* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.0.2
+* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.1.1
 
 ### Extras
 * [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)
