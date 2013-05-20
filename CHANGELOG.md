@@ -1,6 +1,6 @@
 # Changelog
 
-### 0.2.0 (WIP)
+### 0.2.0 (May 19, 2013)
 - Update Brunch Toolchain.
 - Update Ember.js to 1.0.0rc3.
 - Update jQuery and Font Awesome.
