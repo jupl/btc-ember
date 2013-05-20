@@ -71,6 +71,7 @@
     "less-brunch": ">= 1.0 < 1.6",
 
     "ember-precompiler-brunch": ">= 1.0 < 1.6",
+    "emblem-brunch": "0.1.1",
 
     "uglify-js-brunch": ">= 1.0 < 1.6",
     "clean-css-brunch": ">= 1.0 < 1.6",
