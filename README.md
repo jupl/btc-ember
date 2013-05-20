@@ -95,16 +95,16 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Ember](http://emberjs.com/) 1.0.0rc2
+* [Ember](http://emberjs.com/) 1.0.0rc3
 
 ### Utilities
-* [jQuery](http://jquery.com) 1.9.1
+* [jQuery](http://jquery.com) 2.0.0
 * [Modernizr](http://modernizr.com/) 2.6.2 (in test)
 
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
 * [Bootstrap](http://getbootstrap.com/) 2.3.1
-* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.0.2
+* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.1.1
 
 ### Extras
 * [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)
