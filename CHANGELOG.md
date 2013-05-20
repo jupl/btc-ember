@@ -1,9 +1,10 @@
 # Changelog
 
-#### 0.1.3 (WIP)
+### 0.2.0 (WIP)
 - Update Brunch Toolchain.
 - Update Ember.js to 1.0.0rc3.
 - Update jQuery and Font Awesome.
+- Added Emblem support.
 - Enabled Ember.testing when running Mocha tests.
 - Array controller generator no longer auto-pluralizes.
 - Cleanup.
