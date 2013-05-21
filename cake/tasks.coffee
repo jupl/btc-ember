@@ -20,11 +20,11 @@ module.exports =
         description:  'Add Bootstrap responsive'
         task:         -> do Module.Bootstrap.Responsive.add
       glyphicons:
-        command:      'add:bootstrap:glyphicons'
+        command:      'add:bootstrap:glyph'
         description:  'Add Bootstrap glyphicons (removes FontAwesome)'
         task:         -> do Module.Bootstrap.Glyphicons.add
       fontAwesome:
-        command:      'add:bootstrap:fontawesome'
+        command:      'add:bootstrap:awesome'
         description:  'Add FontAwesome into Bootstrap (removes Glyphicons)\n'
         task:         -> do Module.Bootstrap.FontAwesome.add
 

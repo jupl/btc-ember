@@ -20,8 +20,8 @@
     "add:bootstrap":              "./node_modules/.bin/cake add:bootstrap",
     "add:bootstrap:js":           "./node_modules/.bin/cake add:bootstrap:js",
     "add:bootstrap:responsive":   "./node_modules/.bin/cake add:bootstrap:responsive",
-    "add:bootstrap:glyphicons":   "./node_modules/.bin/cake add:bootstrap:glyphicons",
-    "add:bootstrap:fontawesome":  "./node_modules/.bin/cake add:bootstrap:fontawesome",
+    "add:bootstrap:glyph":        "./node_modules/.bin/cake add:bootstrap:glyph",
+    "add:bootstrap:awesome":      "./node_modules/.bin/cake add:bootstrap:awesome",
 
     "rem:bootstrap":              "./node_modules/.bin/cake rem:bootstrap",
     "rem:bootstrap:js":           "./node_modules/.bin/cake rem:bootstrap:js",
