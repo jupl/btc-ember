@@ -1,7 +1,7 @@
 require 'sugar'
 
 module.exports = class Help
-  maxCommandLength: 24
+  maxCommandLength: 25
 
   @npm: ->
     help = new Help

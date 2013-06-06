@@ -1,7 +1,47 @@
 Build = require './tasks/build'
 Help = require './tasks/help'
+Module = 
+  Bootstrap: require './tasks/modules/bootstrap'
 
 module.exports =
+
+  add:
+    bootstrap:
+      core:
+        command:      'add:bootstrap'
+        description:  'Add Bootstrap with FontAwesome'
+        task:         -> Module.Bootstrap.add -> do Module.Bootstrap.FontAwesome.add
+      js:
+        command:      'add:bootstrap:js'
+        description:  'Add Bootstrap JavaScript'
+        task:         -> do Module.Bootstrap.JS.add
+      responsive:
+        command:      'add:bootstrap:responsive'
+        description:  'Add Bootstrap responsive'
+        task:         -> do Module.Bootstrap.Responsive.add
+      glyphicons:
+        command:      'add:bootstrap:glyph'
+        description:  'Add Bootstrap glyphicons (removes FontAwesome)'
+        task:         -> do Module.Bootstrap.Glyphicons.add
+      fontAwesome:
+        command:      'add:bootstrap:awesome'
+        description:  'Add FontAwesome into Bootstrap (removes Glyphicons)\n'
+        task:         -> do Module.Bootstrap.FontAwesome.add
+
+  rem:
+    bootstrap:
+      all:
+        command:      'rem:bootstrap'
+        description:  'Remove Bootstrap and any of the above Bootstrap-related'
+        task:         -> do Module.Bootstrap.remove
+      js:
+        command:      'rem:bootstrap:js'
+        description:  'Remove Bootstrap JavaScript'
+        task:         -> do Module.Bootstrap.JS.remove
+      responsive:
+        command:      'rem:bootstrap:responsive'
+        description:  'Remove Bootstrap responsive\n'
+        task:         -> do Module.Bootstrap.Responsive.remove
 
   build:
     once:

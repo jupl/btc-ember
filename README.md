@@ -1,8 +1,7 @@
-# Brunch Toolchain 0.1.2
+# BTC Bootstrap 0.1.0
 
 ## Introduction
-
-This is a toolchain that leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), and [cake](http://coffeescript.org/#cake) to provide tasks in a simple package. It can be used for skeletons.
+BTC Bootstrap provides some tasks for working with Bootstrap. This tool is baked into other skeletons for easily including Bootstrap where needed.
 
 
 ## Requirements
@@ -21,28 +20,32 @@ This is a toolchain that leverages [node](http://nodejs.org), [Brunch](http://br
 ## Command List
 While Brunch/Scaffolt commands can be used, cake commands are provided for this skeleton. These tasks can be executed using cake if it is installed. (`cake [command]`) If cake is not installed these commands can also be executed using npm. (`npm run-script [command]`) These are the following commands (this list is accessible using either the command `cake` or `npm start`):
 
-### Building
-These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Use `prod` mode to minify/uglify JS/CSS and omit tests.
+### Extras
+These commands add additional features/items to the project that are not included by default.
 
-#### `build:[mode]`
-Assemble the application once.
+#### `add:bootstrap`
+Add Bootstrap and Font Awesome styles to the project. LESS-based files are provided for full customization.
 
-#### `watch:[mode]`
-Assemble the application and continue to watch for changes. Rebuild every time a change is detected.
+#### `add:bootstrap:js` / `rem:bootstrap:js`
+Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://twitter.github.io/bootstrap/javascript.html) to work.
 
-#### `server:[mode]`
-Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. This build uses the `web` environment.
+#### `add:bootstrap:responsive` / `rem:bootstrap:responsive`
+Add/remove Bootstrap files for responsiveness.
 
+#### `add:bootstrap:glyph` / `add:bootstrap:awesome`
+Add Glyphicons or Font Awesome icons. Note that adding one removes the other.
+
+#### `rem:bootstrap`
+Removes all of the above Bootstrap-related components from the project.
 
 ## Details
 
 ### Core
-* [Brunch](http://brunch.io) 1.6.2
-* [Scaffolt](https://github.com/paulmillr/scaffolt) 0.1.1
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.4
 
-### Testing
-* [Mocha](http://visionmedia.github.com/mocha/) 1.8.1
-* [Chai](http://chaijs.com/) 1.5.0
-* [Sinon](http://sinonjs.org/) 1.6.0
-* [Sinon-Chai](https://github.com/domenic/sinon-chai) 2.3.1
-* [Modernizr](http://modernizr.com/) 2.6.2
+### Languages
+* [LESS](http://lesscss.org)
+
+### Styling
+* [Bootstrap](http://getbootstrap.com/) 2.3.2
+* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.1.1
