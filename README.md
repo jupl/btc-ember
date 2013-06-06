@@ -34,7 +34,7 @@ Add/remove Bootstrap and Font Awesome to/from the project. LESS-based files are 
 Add/remove [Ember Data](https://github.com/emberjs/data) to/from the project.
 
 ### Scaffolding
-These commands allow one to generate and destroy Ember components.
+These commands allow one to generate and destroy Ember components. `[template]` denotes the template type to use. (Use `hbs` for [Ember Handlebars](http://emberjs.com/guides/templates/handlebars-basics/) or `emblem` for [Emblem](http://emblemjs.com/syntax/))
 
 #### `gen:model:object` / `del:model:object`
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. This can be used instead if not using Ember Data.
@@ -42,11 +42,11 @@ Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes
 #### `gen:model:ember` / `del:model:ember`
 Generate/destroy an [Ember Data model](http://emberjs.com/guides/models/defining-models/). Make sure that Ember Data is added to the project.
 
-#### `gen:template` / `del:template`
-Generate/destroy an [Ember Handlebars template](http://emberjs.com/guides/templates/handlebars-basics/).
+#### `gen:template:[template]` / `del:template:[template]`
+Generate/destroy a template.
 
-#### `gen:template:partial` / `del:template:partial`
-Generate/destroy an Ember Handlebars partial template.
+#### `gen:template:partial:[template]` / `del:template:partial:[template]`
+Generate/destroy a partial template.
 
 #### `gen:view` / `del:view`
 Generate/destroy an [Ember view](http://emberjs.com/guides/views/defining-a-view/).
