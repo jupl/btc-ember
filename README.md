@@ -91,15 +91,16 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
-* [Handlebars](http://handlebarsjs.com/) 1.0.0rc4
-* [Emblem](http://emblemjs.com/) 0.2.6
+* [Handlebars](http://handlebarsjs.com/) 1.0.0
+* [Emblem](http://emblemjs.com/) 0.2.7
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Ember](http://emberjs.com/) 1.0.0rc3
+* [Ember](http://emberjs.com/) 1.0.0rc5
+* [Ember Data](https://github.com/emberjs/data) 0.13
 
 ### Utilities
-* [jQuery](http://jquery.com) 2.0.0
+* [jQuery](http://jquery.com) 2.0.2
 * [Modernizr](http://modernizr.com/) 2.6.2 (in test)
 
 ### Styling
