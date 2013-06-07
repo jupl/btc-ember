@@ -1,17 +1,19 @@
 Build = require './tasks/build'
 Help = require './tasks/help'
 Scaffold =
-  Model:            require './tasks/scaffolds/model'
-  EmberDataModel:   require './tasks/scaffolds/ember-data-model'
-  Template:         require './tasks/scaffolds/template'
-  PartialTemplate:  require './tasks/scaffolds/partial-template'
-  View:             require './tasks/scaffolds/view'
-  Route:            require './tasks/scaffolds/route'
-  Controller:       require './tasks/scaffolds/controller'
-  ObjectController: require './tasks/scaffolds/object-controller'
-  ArrayController:  require './tasks/scaffolds/array-controller'
-  Style:            require './tasks/scaffolds/style'
-  Test:             require './tasks/scaffolds/test'
+  Model:                     require './tasks/scaffolds/model'
+  EmberDataModel:            require './tasks/scaffolds/ember-data-model'
+  TemplateHandlebars:        require './tasks/scaffolds/template-handlebars'
+  TemplateEmblem:            require './tasks/scaffolds/template-emblem'
+  PartialTemplateHandlebars: require './tasks/scaffolds/partial-template-handlebars'
+  PartialTemplateEmblem:     require './tasks/scaffolds/partial-template-emblem'
+  View:                      require './tasks/scaffolds/view'
+  Route:                     require './tasks/scaffolds/route'
+  Controller:                require './tasks/scaffolds/controller'
+  ObjectController:          require './tasks/scaffolds/object-controller'
+  ArrayController:           require './tasks/scaffolds/array-controller'
+  Style:                     require './tasks/scaffolds/style'
+  Test:                      require './tasks/scaffolds/test'
 Module =
   Bootstrap: require './tasks/modules/bootstrap'
   EmberData: require './tasks/modules/ember-data'
@@ -20,9 +22,26 @@ module.exports =
   
   add:
     bootstrap:
-      command:      'add:bootstrap'
-      description:  'Add Bootstrap with Font Awesome'
-      task:         -> do Module.Bootstrap.add
+      core:
+        command:      'add:bootstrap'
+        description:  'Add Bootstrap with FontAwesome'
+        task:         -> Module.Bootstrap.add -> do Module.Bootstrap.FontAwesome.add
+      js:
+        command:      'add:bootstrap:js'
+        description:  'Add Bootstrap JavaScript'
+        task:         -> do Module.Bootstrap.JS.add
+      responsive:
+        command:      'add:bootstrap:responsive'
+        description:  'Add Bootstrap responsive'
+        task:         -> do Module.Bootstrap.Responsive.add
+      glyphicons:
+        command:      'add:bootstrap:glyph'
+        description:  'Add Bootstrap glyphicons (removes FontAwesome)'
+        task:         -> do Module.Bootstrap.Glyphicons.add
+      fontAwesome:
+        command:      'add:bootstrap:awesome'
+        description:  'Add FontAwesome into Bootstrap (removes Glyphicons)'
+        task:         -> do Module.Bootstrap.FontAwesome.add
     ember:
       data:
         command:      'add:ember:data'
@@ -31,9 +50,18 @@ module.exports =
 
   rem:
     bootstrap:
-      command:      'rem:bootstrap'
-      description:  'Remove Bootstrap with Font Awesome'
-      task:         -> do Module.Bootstrap.remove
+      all:
+        command:      'rem:bootstrap'
+        description:  'Remove Bootstrap and any of the above Bootstrap-related'
+        task:         -> do Module.Bootstrap.remove
+      js:
+        command:      'rem:bootstrap:js'
+        description:  'Remove Bootstrap JavaScript'
+        task:         -> do Module.Bootstrap.JS.remove
+      responsive:
+        command:      'rem:bootstrap:responsive'
+        description:  'Remove Bootstrap responsive'
+        task:         -> do Module.Bootstrap.Responsive.remove
     ember:
       data:
         command:      'rem:ember:data'
@@ -50,13 +78,23 @@ module.exports =
       description:  'Generate an Ember Data model'
       task:         -> do Scaffold.EmberDataModel.generate
     template:
-      command:      'gen:template'
-      description:  'Generate an Ember template'
-      task:         -> do Scaffold.Template.generate
-    partialTemplate:
-      command:      'gen:template:partial'
-      description:  'Generate an Ember partial template'
-      task:         -> do Scaffold.PartialTemplate.generate
+      handlebars:
+        command:      'gen:template:hbs'
+        description:  'Generate an Ember Handlebars template'
+        task:         -> do Scaffold.TemplateHandlebars.generate
+      emblem:
+        command:      'gen:template:emblem'
+        description:  'Generate an Emblem template'
+        task:         -> do Scaffold.TemplateEmblem.generate
+      partial:
+        handlebars:
+          command:      'gen:template:partial:hbs'
+          description:  'Generate an Ember Handlebars partial template'
+          task:         -> do Scaffold.PartialTemplateHandlebars.generate
+        emblem:
+          command:      'gen:template:partial:emblem'
+          description:  'Generate an Emblem partial template'
+          task:         -> do Scaffold.PartialTemplateEmblem.generate
     view:
       command:      'gen:view'
       description:  'Generate an Ember view'
@@ -96,13 +134,23 @@ module.exports =
       description:  'Delete an Ember Data model'
       task:         -> do Scaffold.EmberDataModel.destroy
     template:
-      command:      'del:template'
-      description:  'Delete an Ember template'
-      task:         -> do Scaffold.Template.destroy
-    partialTemplate:
-      command:      'del:template:partial'
-      description:  'Delete an Ember partial template'
-      task:         -> do Scaffold.PartialTemplate.destroy
+      handlebars:
+        command:      'del:template:hbs'
+        description:  'Delete an Ember Handlebars template'
+        task:         -> do Scaffold.TemplateHandlebars.destroy
+      emblem:
+        command:      'del:template:emblem'
+        description:  'Delete an Emblem template'
+        task:         -> do Scaffold.TemplateEmblem.destroy
+      partial:
+        handlebars:
+          command:      'del:template:partial:hbs'
+          description:  'Delete an Ember Handlebars partial template'
+          task:         -> do Scaffold.PartialTemplateHandlebars.destroy
+        emblem:
+          command:      'del:template:partial:emblem'
+          description:  'Delete an Emblem partial template'
+          task:         -> do Scaffold.PartialTemplateEmblem.destroy
     view:
       command:      'del:view'
       description:  'Delete an Ember view'

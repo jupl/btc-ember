@@ -1,4 +1,4 @@
-# Cinder Brunch 0.2.0
+# Cinder Brunch 0.3.0
 
 ## Introduction
 Cinder Brunch is a skeleton for building web applications, specifically single-page applications. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via `cake`.
@@ -27,14 +27,26 @@ While Brunch/Scaffolt commands can be used, cake commands are provided for this 
 ### Extras
 These commands add additional features/items to the project that are not included by default.
 
-#### `add:bootstrap` / `rem:bootstrap`
-Add/remove Bootstrap and Font Awesome to/from the project. LESS-based files are provided for full customization. It is recommended that you modify `app.less` and `base.less` if using Bootstrap.
+#### `add:bootstrap`
+Add Bootstrap and Font Awesome styles to the project. LESS-based files are provided for full customization.
+
+#### `add:bootstrap:js` / `rem:bootstrap:js`
+Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://twitter.github.io/bootstrap/javascript.html) to work.
+
+#### `add:bootstrap:responsive` / `rem:bootstrap:responsive`
+Add/remove Bootstrap files for responsiveness.
+
+#### `add:bootstrap:glyph` / `add:bootstrap:awesome`
+Add Glyphicons or Font Awesome icons. Note that adding one removes the other.
+
+#### `rem:bootstrap`
+Removes all of the above Bootstrap-related components from the project.
 
 #### `add:ember:data` / `rem:ember:data`
 Add/remove [Ember Data](https://github.com/emberjs/data) to/from the project.
 
 ### Scaffolding
-These commands allow one to generate and destroy Ember components.
+These commands allow one to generate and destroy Ember components. `[template]` denotes the template type to use. (Use `hbs` for [Ember Handlebars](http://emberjs.com/guides/templates/handlebars-basics/) or `emblem` for [Emblem](http://emblemjs.com/syntax/))
 
 #### `gen:model:object` / `del:model:object`
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. This can be used instead if not using Ember Data.
@@ -42,11 +54,11 @@ Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes
 #### `gen:model:ember` / `del:model:ember`
 Generate/destroy an [Ember Data model](http://emberjs.com/guides/models/defining-models/). Make sure that Ember Data is added to the project.
 
-#### `gen:template` / `del:template`
-Generate/destroy an [Ember Handlebars template](http://emberjs.com/guides/templates/handlebars-basics/).
+#### `gen:template:[template]` / `del:template:[template]`
+Generate/destroy a template.
 
-#### `gen:template:partial` / `del:template:partial`
-Generate/destroy an Ember Handlebars partial template.
+#### `gen:template:partial:[template]` / `del:template:partial:[template]`
+Generate/destroy a partial template.
 
 #### `gen:view` / `del:view`
 Generate/destroy an [Ember view](http://emberjs.com/guides/views/defining-a-view/).
@@ -86,25 +98,25 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Details
 
 ### Core
-* [Brunch](http://brunch.io) 1.6.7
 * [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.4
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
 * [Handlebars](http://handlebarsjs.com/) 1.0.0rc4
-* [Emblem](http://emblemjs.com/) 0.2.6
+* [Emblem](http://emblemjs.com/) 0.2.7
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Ember](http://emberjs.com/) 1.0.0rc3
+* [Ember](http://emberjs.com/) 1.0.0rc5
+* [Ember Data](https://github.com/emberjs/data) 0.13
 
 ### Utilities
-* [jQuery](http://jquery.com) 2.0.0
+* [jQuery](http://jquery.com) 2.0.2
 * [Modernizr](http://modernizr.com/) 2.6.2 (in test)
 
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
-* [Bootstrap](http://getbootstrap.com/) 2.3.1
+* [Bootstrap](http://getbootstrap.com/) 2.3.2
 * [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.1.1
 
 ### Extras

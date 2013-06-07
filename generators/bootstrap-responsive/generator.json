@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "from": "less/responsive-1200px-min.less",
+      "to":   "vendor/styles/bootstrap/_responsive-1200px-min.less"
+    },
+    {
+      "from": "less/responsive-767px-max.less",
+      "to":   "vendor/styles/bootstrap/_responsive-767px-max.less"
+    },
+    {
+      "from": "less/responsive-768px-979px.less",
+      "to":   "vendor/styles/bootstrap/_responsive-768px-979px.less"
+    },
+    {
+      "from": "less/responsive-navbar.less",
+      "to":   "vendor/styles/bootstrap/_responsive-navbar.less"
+    },
+    {
+      "from": "less/responsive-utilities.less",
+      "to":   "vendor/styles/bootstrap/_responsive-utilities.less"
+    },
+    {
+      "from": "less/responsive.less",
+      "to":   "vendor/styles/bootstrap/responsive.less"
+    }
+  ],
+  "dependencies": []
+}

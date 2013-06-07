@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "from": "font/fontawesome-webfont.eot",
+      "to":   "app/assets/font/fontawesome-webfont.eot"
+    },
+    {
+      "from": "font/fontawesome-webfont.svg",
+      "to":   "app/assets/font/fontawesome-webfont.svg"
+    },
+    {
+      "from": "font/fontawesome-webfont.ttf",
+      "to":   "app/assets/font/fontawesome-webfont.ttf"
+    },
+    {
+      "from": "font/fontawesome-webfont.woff",
+      "to":   "app/assets/font/fontawesome-webfont.woff"
+    },
+    {
+      "from": "font/FontAwesome.otf",
+      "to":   "app/assets/font/FontAwesome.otf"
+    },
+    {
+      "from": "less/sprites.less",
+      "to":   "vendor/styles/bootstrap/_sprites.less"
+    },
+    {
+      "from": "less/font-awesome/bootstrap.less",
+      "to":   "vendor/styles/bootstrap/font-awesome/_bootstrap.less"
+    },
+    {
+      "from": "less/font-awesome/core.less",
+      "to":   "vendor/styles/bootstrap/font-awesome/_core.less"
+    },
+    {
+      "from": "less/font-awesome/extras.less",
+      "to":   "vendor/styles/bootstrap/font-awesome/_extras.less"
+    },
+    {
+      "from": "less/font-awesome/font-awesome-ie7.less",
+      "to":   "vendor/styles/bootstrap/font-awesome/_font-awesome-ie7.less"
+    },
+    {
+      "from": "less/font-awesome/font-awesome.less",
+      "to":   "vendor/styles/bootstrap/font-awesome/_font-awesome.less"
+    },
+    {
+      "from": "less/font-awesome/icons.less",
+      "to":   "vendor/styles/bootstrap/font-awesome/_icons.less"
+    },
+    {
+      "from": "less/font-awesome/mixins.less",
+      "to":   "vendor/styles/bootstrap/font-awesome/_mixins.less"
+    },
+    {
+      "from": "less/font-awesome/path.less",
+      "to":   "vendor/styles/bootstrap/font-awesome/_path.less"
+    },
+    {
+      "from": "less/font-awesome/variables.less",
+      "to":   "vendor/styles/bootstrap/font-awesome/_variables.less"
+    }
+  ],
+  "dependencies": []
+}

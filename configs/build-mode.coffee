@@ -23,10 +23,13 @@ developmentMode = (config) ->
 
   # Modify given config to ignore Ember prod build
   addIgnored config, 'vendor/scripts/ember/ember.prod.js'
+  addIgnored config, 'vendor/scripts/ember/ember-data.prod.js'
 
   config
 
 # Modify given config so that test files are ignored
 productionMode = (config) ->
-  addIgnored config, /^test/, 'vendor/scripts/ember/ember.js'
+  addIgnored config, /^test/
+  addIgnored config, 'vendor/scripts/ember/ember.js'
+  addIgnored config, 'vendor/scripts/ember/ember-data.js'
   config
