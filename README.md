@@ -103,7 +103,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Languages
 * [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
-* [Handlebars](http://handlebarsjs.com/) 1.0.0
+* [Handlebars](http://handlebarsjs.com/) 1.0.0rc4
 * [Emblem](http://emblemjs.com/) 0.2.7
 * [LESS](http://lesscss.org)
 

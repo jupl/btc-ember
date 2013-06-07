@@ -2,7 +2,7 @@
 
 ### WIP
 - Update Ember.js to 1.0.0rc5
-- Update Handlebars to 1.0.0
+- Update Handlebars to 1.0.0rc4
 - Update Ember Data to 0.13
 - Update Emblem to 0.2.7
 - Update jQuery to 2.0.2
