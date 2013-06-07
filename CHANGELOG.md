@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.3.0 (June 6, 2013)
 - Update Ember.js to 1.0.0rc5
 - Update Handlebars to 1.0.0rc4
 - Update Ember Data to 0.13
