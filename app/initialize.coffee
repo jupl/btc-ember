@@ -1,4 +1,4 @@
-window.initialize = ->
+initialize = ->
   App.advanceReadiness()
 
 $ ->
