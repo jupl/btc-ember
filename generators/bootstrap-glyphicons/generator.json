@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "from": "images/glyphicons-halflings.png",
+      "to":   "app/assets/images/glyphicons-halflings.png"
+    },
+    {
+      "from": "images/glyphicons-halflings-white.png",
+      "to":   "app/assets/images/glyphicons-halflings-white.png"
+    },
+    {
+      "from": "less/sprites.less",
+      "to":   "vendor/styles/bootstrap/_sprites.less"
+    }
+  ],
+  "dependencies": []
+}

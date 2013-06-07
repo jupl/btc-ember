@@ -22,9 +22,26 @@ module.exports =
   
   add:
     bootstrap:
-      command:      'add:bootstrap'
-      description:  'Add Bootstrap with Font Awesome'
-      task:         -> do Module.Bootstrap.add
+      core:
+        command:      'add:bootstrap'
+        description:  'Add Bootstrap with FontAwesome'
+        task:         -> Module.Bootstrap.add -> do Module.Bootstrap.FontAwesome.add
+      js:
+        command:      'add:bootstrap:js'
+        description:  'Add Bootstrap JavaScript'
+        task:         -> do Module.Bootstrap.JS.add
+      responsive:
+        command:      'add:bootstrap:responsive'
+        description:  'Add Bootstrap responsive'
+        task:         -> do Module.Bootstrap.Responsive.add
+      glyphicons:
+        command:      'add:bootstrap:glyph'
+        description:  'Add Bootstrap glyphicons (removes FontAwesome)'
+        task:         -> do Module.Bootstrap.Glyphicons.add
+      fontAwesome:
+        command:      'add:bootstrap:awesome'
+        description:  'Add FontAwesome into Bootstrap (removes Glyphicons)'
+        task:         -> do Module.Bootstrap.FontAwesome.add
     ember:
       data:
         command:      'add:ember:data'
@@ -33,9 +50,18 @@ module.exports =
 
   rem:
     bootstrap:
-      command:      'rem:bootstrap'
-      description:  'Remove Bootstrap with Font Awesome'
-      task:         -> do Module.Bootstrap.remove
+      all:
+        command:      'rem:bootstrap'
+        description:  'Remove Bootstrap and any of the above Bootstrap-related'
+        task:         -> do Module.Bootstrap.remove
+      js:
+        command:      'rem:bootstrap:js'
+        description:  'Remove Bootstrap JavaScript'
+        task:         -> do Module.Bootstrap.JS.remove
+      responsive:
+        command:      'rem:bootstrap:responsive'
+        description:  'Remove Bootstrap responsive'
+        task:         -> do Module.Bootstrap.Responsive.remove
     ember:
       data:
         command:      'rem:ember:data'

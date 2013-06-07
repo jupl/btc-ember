@@ -11,17 +11,23 @@
   },
 
   "engines": {
-    "node": "~0.6.10 || 0.8 || 0.9"
+    "node": "~0.6.10 || 0.8 || 0.9 || 0.10"
   },
   
   "scripts": {
     "start": "./node_modules/.bin/cake help:npm",
 
-    "add:bootstrap":  "./node_modules/.bin/cake add:bootstrap",
-    "add:ember:data": "./node_modules/.bin/cake add:ember:data",
+    "add:bootstrap":              "./node_modules/.bin/cake add:bootstrap",
+    "add:bootstrap:js":           "./node_modules/.bin/cake add:bootstrap:js",
+    "add:bootstrap:responsive":   "./node_modules/.bin/cake add:bootstrap:responsive",
+    "add:bootstrap:glyph":        "./node_modules/.bin/cake add:bootstrap:glyph",
+    "add:bootstrap:awesome":      "./node_modules/.bin/cake add:bootstrap:awesome",
+    "add:ember:data":             "./node_modules/.bin/cake add:ember:data",
 
-    "rem:bootstrap":  "./node_modules/.bin/cake rem:bootstrap",
-    "rem:ember:data": "./node_modules/.bin/cake rem:ember:data",
+    "rem:bootstrap":              "./node_modules/.bin/cake rem:bootstrap",
+    "rem:bootstrap:js":           "./node_modules/.bin/cake rem:bootstrap:js",
+    "rem:bootstrap:responsive":   "./node_modules/.bin/cake rem:bootstrap:responsive",
+    "rem:ember:data":             "./node_modules/.bin/cake rem:ember:data",
 
     "gen:model:object":             "./node_modules/.bin/cake gen:model:object",
     "gen:model:ember":              "./node_modules/.bin/cake gen:model:ember",

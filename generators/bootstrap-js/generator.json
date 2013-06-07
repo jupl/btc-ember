@@ -1,0 +1,57 @@
+{
+  "files": [
+    {
+      "from": "js/bootstrap-affix.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-affix.js"
+    },
+    {
+      "from": "js/bootstrap-alert.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-alert.js"
+    },
+    {
+      "from": "js/bootstrap-button.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-button.js"
+    },
+    {
+      "from": "js/bootstrap-carousel.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-carousel.js"
+    },
+    {
+      "from": "js/bootstrap-collapse.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-collapse.js"
+    },
+    {
+      "from": "js/bootstrap-dropdown.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-dropdown.js"
+    },
+    {
+      "from": "js/bootstrap-modal.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-modal.js"
+    },
+    {
+      "from": "js/bootstrap-popover.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-popover.js"
+    },
+    {
+      "from": "js/bootstrap-scrollspy.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-scrollspy.js"
+    },
+    {
+      "from": "js/bootstrap-tab.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-tab.js"
+    },
+    {
+      "from": "js/bootstrap-tooltip.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-tooltip.js"
+    },
+    {
+      "from": "js/bootstrap-transition.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-transition.js"
+    },
+    {
+      "from": "js/bootstrap-typeahead.js",
+      "to":   "vendor/scripts/bootstrap/bootstrap-typeahead.js"
+    }
+  ],
+  "dependencies": []
+}

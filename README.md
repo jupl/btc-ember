@@ -27,8 +27,20 @@ While Brunch/Scaffolt commands can be used, cake commands are provided for this 
 ### Extras
 These commands add additional features/items to the project that are not included by default.
 
-#### `add:bootstrap` / `rem:bootstrap`
-Add/remove Bootstrap and Font Awesome to/from the project. LESS-based files are provided for full customization. It is recommended that you modify `app.less` and `base.less` if using Bootstrap.
+#### `add:bootstrap`
+Add Bootstrap and Font Awesome styles to the project. LESS-based files are provided for full customization.
+
+#### `add:bootstrap:js` / `rem:bootstrap:js`
+Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://twitter.github.io/bootstrap/javascript.html) to work.
+
+#### `add:bootstrap:responsive` / `rem:bootstrap:responsive`
+Add/remove Bootstrap files for responsiveness.
+
+#### `add:bootstrap:glyph` / `add:bootstrap:awesome`
+Add Glyphicons or Font Awesome icons. Note that adding one removes the other.
+
+#### `rem:bootstrap`
+Removes all of the above Bootstrap-related components from the project.
 
 #### `add:ember:data` / `rem:ember:data`
 Add/remove [Ember Data](https://github.com/emberjs/data) to/from the project.
@@ -105,7 +117,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Styling
 * [Clearless](http://clearleft.github.com/clearless/)
-* [Bootstrap](http://getbootstrap.com/) 2.3.1
+* [Bootstrap](http://getbootstrap.com/) 2.3.2
 * [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.1.1
 
 ### Extras
