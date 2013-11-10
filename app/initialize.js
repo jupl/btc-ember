@@ -1,13 +1,16 @@
-$(document).ready(initialize);
-
-function initialize() {
-  // Add Swag if available
-  if(window.Swag) {
-    Swag.registerHelpers();
-  }
-
-  // Do not start automatically if testing
-  if(!Ember.testing) {
-    App.advanceReadiness();
-  }
+// Add Swag if available
+if(window.Swag) {
+  Swag.registerHelpers();
 }
+
+(function() {
+  // Wait in starting the application
+  $(document).ready(initialize);
+
+  // Initialize the application
+  function initialize() {
+    if(!Ember.testing) {
+      App.advanceReadiness();
+    }
+  }
+})();
