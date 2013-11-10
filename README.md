@@ -75,10 +75,7 @@ Add/remove [Swag](http://elving.github.io/swag/) to/from the project to add addi
 ### Scaffolding
 
 #### `gen:model name=[name]` / `del:model name=[name]`
-Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. This can be used instead if not using Ember Data.
-
-#### `gen:datamodel name=[name]` / `del:datamodel name=[name]`
-Generate/destroy an [Ember Data model](http://emberjs.com/guides/models/defining-models/). Make sure that Ember Data is included in the project.
+Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
 
 #### `gen:template name=[name]` / `del:template name=[name]`
 Generate/destroy a Handlebars template.
