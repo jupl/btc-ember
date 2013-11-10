@@ -11,6 +11,7 @@ module.exports = function(config) {
     files: [
       path.resolve(__dirname, '../node_modules/mocha-as-promised/mocha-as-promised.js'),
       path.resolve(publicPath, '**/vendor.js'),
+      path.resolve(__dirname, 'karma.setup.js'),
       path.resolve(publicPath, '**/!(vendor).js'),
       path.resolve(__dirname, 'code/*.js'),
       path.resolve(__dirname, 'code/**/*.js')

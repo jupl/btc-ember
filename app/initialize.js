@@ -6,5 +6,8 @@ function initialize() {
     Swag.registerHelpers();
   }
 
-  App.advanceReadiness();
+  // Do not start automatically if testing
+  if(!Ember.testing) {
+    App.advanceReadiness();
+  }
 }
