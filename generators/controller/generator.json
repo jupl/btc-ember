@@ -1,8 +1,9 @@
 {
+  "description": "Ember controller",
   "files": [
     {
-      "from": "controller.coffee.hbs",
-      "to": "app/controllers/{{name}}.coffee"
+      "from": "controller.js.hbs",
+      "to": "app/controllers/{{#dasherize}}{{pluralName}}{{/dasherize}}.js"
     }
   ],
   "dependencies": []

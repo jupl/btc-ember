@@ -15,6 +15,13 @@ namespace('add', function() {
     });
   });
 
+  desc('Add Swag (Handlebar helpers)');
+  task('swag', function() {
+    editBower(function() {
+      this.dependencies.swag = '~0.3.1';
+    });
+  });
+
   generators.forEach(function(generator) {
     if(generator.isModule) {
       desc('Add ' + generator.description);
@@ -34,6 +41,13 @@ namespace('rem', function() {
   task('normalize', function() {
     editBower(function() {
       delete this.dependencies['normalize-css'];
+    });
+  });
+
+  desc('Remove Swag');
+  task('swag', function() {
+    editBower(function() {
+      delete this.dependencies.swag;
     });
   });
 

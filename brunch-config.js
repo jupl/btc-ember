@@ -3,9 +3,7 @@ var setup = require('./setup');
 exports.config = setup({
   modules: {
     definition: false,
-    wrapper: function(path, code) {
-      return ['(function() {', code, '})()'].join('\n');
-    }
+    wrapper: false
   },
 
   files: {
@@ -13,6 +11,9 @@ exports.config = setup({
       joinTo: {
         'javascripts/app.js': /^app/,
         'javascripts/vendor.js': /^(vendor|bower_components)/
+      },
+      order: {
+        before: ['app/app.js']
       }
     },
 

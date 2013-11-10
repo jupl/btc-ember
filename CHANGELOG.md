@@ -1,13 +1,11 @@
 # Changelog
 
 ### WIP
-- Update Ember.js to 1.0.0rc5
-- Update Handlebars to 1.0.0rc4
-- Update Ember Data to 0.13
-- Update Emblem to 0.2.7
-- Update jQuery to 2.0.2
-- Integrate BTC Bootstrap
-- Added generators for both Handlebars and Emblem
+- Update BTC
+- Update libraries
+- Leverage Bower
+- Transition to JS and Stylus
+- Add Swag as a module
 
 ### 0.2.0 (May 19, 2013)
 - Update Brunch Toolchain.

@@ -1,8 +1,9 @@
 {
+  "description": "Ember view",
   "files": [
     {
-      "from": "view.coffee.hbs",
-      "to": "app/views/{{name}}.coffee"
+      "from": "view.js.hbs",
+      "to": "app/views/{{#dasherize}}{{name}}{{/dasherize}}.js"
     }
   ],
   "dependencies": []

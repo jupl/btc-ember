@@ -1,5 +1,0 @@
-initialize = ->
-  App.advanceReadiness()
-
-$ ->
-  initialize()

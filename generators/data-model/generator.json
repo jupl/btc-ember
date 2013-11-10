@@ -1,5 +1,5 @@
 {
-  "description": "Ember object to be used as a model",
+  "description": "Ember Data model (requires Ember Data)",
   "files": [
     {
       "from": "model.js.hbs",
