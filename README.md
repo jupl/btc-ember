@@ -130,17 +130,16 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Libraries
 
 ### Core
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain)
+- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain)
 
 ### Languages
-* [CoffeeScript](http://coffeescript.org)
-* [Handlebars](http://handlebarsjs.com/)
-* [Emblem](http://emblemjs.com/)
-* [LESS](http://lesscss.org)
+- [Handlebars](http://handlebarsjs.com/)
+- [Stylus](http://learnboost.github.io/stylus/)
 
 ### Framework
-* [Ember](http://emberjs.com/)
-* [Ember Data](https://github.com/emberjs/data)
+- [Ember](http://emberjs.com/)
+- [Ember Data](https://github.com/emberjs/data)
 
 ### Utilities
-* [jQuery](http://jquery.com)
+- [jQuery](http://jquery.com)
+- [Nib](http://visionmedia.github.io/nib/)
