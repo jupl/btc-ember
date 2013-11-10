@@ -1,90 +1,121 @@
 # Cinder Brunch 0.2.0
 
+[<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
+[<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
+
 ## Introduction
-Cinder Brunch is a skeleton for building web applications, specifically single-page applications. While [Brunch](http://brunch.io) can be used to run commands, tasks are also supplied via `cake`.
+Cinder Brunch is a skeleton for building [Ember.js](http://emberjs.com/) applications. This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. It can be used for skeletons. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency.
 
 
-## About
-Cinder Brunch uses the [Ember.js](http://emberjs.com/) framework with [CoffeeScript](http://coffeescript.org/). With this skeleton, one does not need to worry about `require` statements when it comes to Ember modules while still wrapped in a function to better avoid global namespace pollution. When building the proper Ember build (debug/production) will be used when assembling.
+## File Structure
+
+    ├── app                 # App is built here. Look at Brunch for more info.
+    │   └── assets          # Static files that are just copied
+    ├── bower_components    # Packages installed by Bower
+    ├── generators          # Generators used by Scaffolt
+    ├── jakelib             # Unified set of tasks for development
+    ├── public              # Generated final product
+    ├── setup               # Add configuration options to brunch-config
+    ├── test                # Test-related files
+    │   ├── assets          # Static assets to run code tests manually
+    │   ├── code            # Code-based tests for Karma/manual
+    │   ├── site            # Site-based tests for Mocha and WebDriverJS
+    │   ├── karma.conf.js   # Karma configuration for code tests
+    │   ├── mocha.opts      # Default options for site tests
+    │   └── setup.js        # Configuration for site tests
+    ├── vendor              # 3rd party JS/CSS libraries
+    ├── .editorconfig       # EditorConfig definition file for coding styles
+    ├── bower.json          # Listing for Bower dependencies to download
+    ├── brunch-config.js    # Brunch app build configuration
+    └── package.json        # Project dependencies and configuration
 
 
 ## Requirements
-* [node.js](http://nodejs.org) (mandatory)
-* [CoffeeScript](http://coffeescript.org/#installation) (recommended via npm)
+- [node.js](http://nodejs.org)
+- [Jake](https://github.com/mde/jake#installing-with-npm) (required for development)
 
 
 ## Setup
+
 1. Install node.js.
-2. While not mandatory, it is recommended to install CoffeeScript.
-3. Download this skeleton.
-4. Open a Terminal / Command Prompt and navigate to this directory where you downloaded the skeleton.
+2. If doing development, install Jake.
+4. Open a terminal window and navigate to the project directory.
 5. Execute the command `npm install` to install all package dependencies.
 
 
-## Command List
-While Brunch/Scaffolt commands can be used, cake commands are provided for this skeleton. These tasks can be executed using cake if it is installed. (`cake [command]`) If cake is not installed these commands can also be executed using npm. (`npm run-script [command]`) These are the following commands (this list is accessible using either the command `cake` or `npm start`):
+## Notes
+If you want to just run Brunch without using Jake tasks, just use either `web:dev` or `web:prod` for the environment. ex: `brunch watch --server --environment web:prod`
+
+One-line commands are provided for convenience as well for those that want to start running things as quickly as possible by installing depedencies automatically. Use `npm start` to download non-development packages and run the `server:prod` task. Use `npm test` to download all packages and run the `test:all` task.
+
+
+## Task List
+While Brunch/Scaffolt/etc. can be used, Jake commands are provided for a simple and consistent interface. These tasks can be executed using `jake`. (`jake [task]`) These are the following available tasks provided out of the box:
+
+
+### Bower
+
+#### `bower:install`
+Download and preinstall any Bower dependencies in advance. You can run this if you want to download Bower dependencies in advance.
+
 
 ### Extras
 These commands add additional features/items to the project that are not included by default.
 
-#### `add:bootstrap`
-Add Bootstrap and Font Awesome styles to the project. LESS-based files are provided for full customization.
+#### `add:jquery` / `rem:jquery`
+Add/remove the ubiquitous library [jQuery](http://jquery.com/) to/from the project.
 
-#### `add:bootstrap:js` / `rem:bootstrap:js`
-Add/remove Bootstrap JavaScript files to/from the project. These are essential for some [plugins](http://twitter.github.io/bootstrap/javascript.html) to work.
+#### `add:normalize` / `rem:normalize`
+Add/remove [normalize.css](http://necolas.github.io/normalize.css/) to ensure a consistent starting point in styling between different browsers.
 
-#### `add:bootstrap:responsive` / `rem:bootstrap:responsive`
-Add/remove Bootstrap files for responsiveness.
-
-#### `add:bootstrap:glyph` / `add:bootstrap:awesome`
-Add Glyphicons or Font Awesome icons. Note that adding one removes the other.
-
-#### `rem:bootstrap`
-Removes all of the above Bootstrap-related components from the project.
-
-#### `add:ember:data` / `rem:ember:data`
-Add/remove [Ember Data](https://github.com/emberjs/data) to/from the project.
 
 ### Scaffolding
-These commands allow one to generate and destroy Ember components. `[template]` denotes the template type to use. (Use `hbs` for [Ember Handlebars](http://emberjs.com/guides/templates/handlebars-basics/) or `emblem` for [Emblem](http://emblemjs.com/syntax/))
 
-#### `gen:model:object` / `del:model:object`
-Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. This can be used instead if not using Ember Data.
+#### `gen:codetest name=[name]` / `del:codetest name=[name]`
+Generate/destroy a test file with the given test name for testing code. (ex: unit testing)
 
-#### `gen:model:ember` / `del:model:ember`
-Generate/destroy an [Ember Data model](http://emberjs.com/guides/models/defining-models/). Make sure that Ember Data is added to the project.
+#### `gen:sitetest name=[name]` / `del:sitetest name=[name]`
+Generate/destroy a test file with the given test name for testing the site. (ex: functional testing)
 
-#### `gen:template:[template]` / `del:template:[template]`
-Generate/destroy a template.
 
-#### `gen:template:partial:[template]` / `del:template:partial:[template]`
-Generate/destroy a partial template.
+### Testing
+Tests leverage [PhantomJS](http://phantomjs.org/), [Mocha](http://visionmedia.github.io/mocha/), [Mocha as Promised](https://github.com/domenic/mocha-as-promised), and [Chai](http://chaijs.com/). Code and site testing is provided. Code testing adds [Sinon](http://sinonjs.org/) and [Sinon-Chai](https://github.com/domenic/sinon-chai).
 
-#### `gen:view` / `del:view`
-Generate/destroy an [Ember view](http://emberjs.com/guides/views/defining-a-view/).
+#### `test:all [codereporter=progress] [sitereporter=spec]`
+Run all tests listed below once. For more information on reporters see below.
 
-#### `gen:route` / `del:route`
-Generate/destroy an [Ember route](http://emberjs.com/guides/routing/defining-your-routes/).
+#### `test:code [reporter=progress] [watch=false]`
+Run code-based tests (ex. unit tests) using Karma. Karma is preconfigured out of the box to run with PhantomJS. A Karma reporter can be specified with the `reporter` option. If you run this task with `watch=true` Karma will auto-run on file changes. Otherwise by default Karma runs once. In addition, if you run a build (see below) with the `dev` environment the tests are included with a reporter under `test` to run in browsers. (ex. visit `http://locahost:[port]/test`)
 
-#### `gen:controller` / `del:controller`
-Generate/destroy an [Ember controller](http://emberjs.com/api/classes/Ember.Controller.html).
+#### `test:site [reporter=spec] [watch=false]`
+Run site-based tests (ex. system tests) using Mocha and WebDriverJS. A Brunch server is started up temporarily to interact with the site. A Mocha reporter can be specified with the `reporter` option. If you run this task with `watch=true` Mocha will auto-run on file changes with [nodemon](http://remy.github.io/nodemon/). Otherwise by default Mocha runs once. The global method `getDriver` is provided to get a setup and built driver. WebDriverJS' use of Promises can be combined with Mocha as Promised to handle asynchronous behavior easily. ex:
 
-#### `gen:controller:object` / `del:controller:object`
-Generate/destroy an [Ember object controller](http://emberjs.com/guides/controllers/representing-a-single-model-with-objectcontroller/).
+```js
+describe('Sample', function() {
+  var driver;
 
-#### `gen:controller:array` / `del:controller:array`
-Generate/destroy an [Ember array controller](http://emberjs.com/guides/controllers/representing-multiple-models-with-arraycontroller/). Specify the name in singular form, as it will automatically be pluralized.
+  before(function() {
+    driver = getDriver();
+  });
 
-#### `gen:test` / `del:test`
-Generate/destroy a test file to be run using Mocha.
+  it('Has a proper title', function() {
+    return driver.get('http://localhost:3333').then(function() {
+      return driver.getTitle();
+    })
+    .then(function(title) {
+      expect(title).to.equal('Brunch Toolchain');
+    });
+  });
 
-#### `gen:style` / `del:style`
-Generate/destroy a LESS stylesheet file.
+  after(function() {
+    driver.quit();
+  });
+});
+```
+
 
 ### Building
-These commands are used to assemble the application, generating the necessary JS/CSS and adding assets.
-* Use `dev` mode to keep readable JS/CSS and include tests under the `test/` folder. Ember's debug build is used.
-* Use `prod` mode to minify/uglify JS/CSS and omit tests. Ember's production build is used.
+These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS, plus include source maps as well as tests under the `test` folder. Use `prod` mode to minify/uglify JS/CSS as well as omit source maps and tests. If any Bower dependencies have not been downloaded yet, Bower will first download them.
 
 #### `build:[mode]`
 Assemble the application once.
@@ -95,30 +126,21 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 #### `server:[mode]`
 Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. This build uses the `web` environment.
 
-## Details
+
+## Libraries
 
 ### Core
-* [Brunch](http://brunch.io) 1.6.7
-* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.1.4
+* [Brunch Toolchain](https://github.com/jupl/brunch-toolchain)
 
 ### Languages
-* [CoffeeScript](http://coffeescript.org) (includes [CoffeeLint](http://www.coffeelint.org))
-* [Handlebars](http://handlebarsjs.com/) 1.0.0rc4
-* [Emblem](http://emblemjs.com/) 0.2.7
+* [CoffeeScript](http://coffeescript.org)
+* [Handlebars](http://handlebarsjs.com/)
+* [Emblem](http://emblemjs.com/)
 * [LESS](http://lesscss.org)
 
 ### Framework
-* [Ember](http://emberjs.com/) 1.0.0rc5
-* [Ember Data](https://github.com/emberjs/data) 0.13
+* [Ember](http://emberjs.com/)
+* [Ember Data](https://github.com/emberjs/data)
 
 ### Utilities
-* [jQuery](http://jquery.com) 2.0.2
-* [Modernizr](http://modernizr.com/) 2.6.2 (in test)
-
-### Styling
-* [Clearless](http://clearleft.github.com/clearless/)
-* [Bootstrap](http://getbootstrap.com/) 2.3.2
-* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) 3.1.1
-
-### Extras
-* [Auto-Reload Brunch](https://github.com/brunch/auto-reload-brunch)
+* [jQuery](http://jquery.com)
