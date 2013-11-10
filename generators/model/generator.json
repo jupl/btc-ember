@@ -3,7 +3,7 @@
   "files": [
     {
       "from": "model.js.hbs",
-      "to": "app/models/{{#dasherize}}{{pluralName}}{{/dasherize}}.js"
+      "to": "app/models/{{#dasherize}}{{name}}{{/dasherize}}.js"
     }
   ],
   "dependencies": []
