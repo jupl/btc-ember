@@ -1,5 +1,5 @@
 {
-  "description": "Handlebars partial template",
+  "description": "partial Handlebars template",
   "files": [
     {
       "from": "template.hbs.hbs",
