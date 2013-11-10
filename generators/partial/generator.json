@@ -1,0 +1,10 @@
+{
+  "description": "Handlebars partial template",
+  "files": [
+    {
+      "from": "template.hbs.hbs",
+      "to": "app/templates/_{{#dasherize}}{{name}}{{/dasherize}}.hbs"
+    }
+  ],
+  "dependencies": []
+}

@@ -1,6 +1,13 @@
 var setup = require('./setup');
 
 exports.config = setup({
+  modules: {
+    definition: false,
+    wrapper: function(path, code) {
+      return ['(function() {', code, '})()'].join('\n');
+    }
+  },
+
   files: {
     javascripts: {
       joinTo: {
@@ -16,7 +23,12 @@ exports.config = setup({
     },
 
     templates: {
-      joinTo: 'javascripts/app.js'
+      joinTo: 'javascripts/app.js',
+      paths: {
+        jquery: 'bower_components/jquery/jquery.js',
+        ember: 'bower_components/ember/ember.js',
+        handlebars: 'bower_components/handlebars/handlebars.js'
+      }
     }
   }
 });
