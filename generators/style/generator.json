@@ -3,7 +3,7 @@
   "files": [
     {
       "from": "style.styl.hbs",
-      "to": "app/styles/{{name}}.styl"
+      "to": "app/styles/{{#dasherize}}{{name}}{{/dasherize}}.styl"
     }
   ],
   "dependencies": []
