@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.4.0 (November 12, 2013)
 - Update BTC
 - Update libraries
 - Leverage Bower
