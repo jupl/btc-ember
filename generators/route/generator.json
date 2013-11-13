@@ -1,8 +1,9 @@
 {
+  "description": "Ember route",
   "files": [
     {
-      "from": "route.coffee.hbs",
-      "to": "app/routes/{{name}}.coffee"
+      "from": "route.js.hbs",
+      "to": "app/routes/{{#dasherize}}{{name}}{{/dasherize}}.js"
     }
   ],
   "dependencies": []

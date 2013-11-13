@@ -1,0 +1,14 @@
+{
+  "description": "Ember component",
+  "files": [
+    {
+      "from": "component.js.hbs",
+      "to": "app/components/{{#dasherize}}{{name}}{{/dasherize}}.js"
+    },
+    {
+      "from": "template.hbs.hbs",
+      "to": "app/templates/components/{{#dasherize}}{{name}}{{/dasherize}}.hbs"
+    }
+  ],
+  "dependencies": []
+}

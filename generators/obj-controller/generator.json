@@ -1,5 +1,5 @@
 {
-  "description": "Ember controller",
+  "description": "Ember object controller",
   "files": [
     {
       "from": "controller.js.hbs",
