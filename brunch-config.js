@@ -5,10 +5,9 @@ exports.config = setup({
     definition: false,
     wrapper: function(path, code) { // Wrap app code in closures
       if(/^app\//.test(path)) {
-        return '\n(function() {\n' + code + '\n})();'
+        code = '\n(function() {\n' + code + '\n})();';
       }
-      else
-        return code;
+      return code;
     }
   },
 
