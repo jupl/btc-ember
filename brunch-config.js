@@ -3,7 +3,13 @@ var setup = require('./setup');
 exports.config = setup({
   modules: {
     definition: false,
-    wrapper: false
+    wrapper: function(path, code) { // Wrap app code in closures
+      if(/^app\//.test(path)) {
+        return '\n(function() {\n' + code + '\n})();'
+      }
+      else
+        return code;
+    }
   },
 
   files: {
