@@ -10,7 +10,20 @@ Cinder Brunch is a skeleton for building [Ember.js](http://emberjs.com/) applica
 ## File Structure
 
     ├── app                 # App is built here. Look at Brunch for more info.
-    │   └── assets          # Static files that are just copied
+    │   ├── assets          # Static files that are just copied
+    │   ├── components      # Ember components
+    │   ├── controller      # Ember controllers (regular, object, array)
+    │   ├── models          # Objects that represent data for Ember
+    │   ├── routes          # Ember routes
+    │   ├── styles          # Stylus stylesheets
+    │   ├── templates       # Handlebars templates and partials
+    │   │   └── components  # Handlebars templates for Ember components
+    │   ├── app.js          # Configure main application
+    │   ├── app.styl        # Application/page styling definition
+    │   ├── base.styl       # Stylus variables and mixins for the application
+    │   ├── initialize.js   # Bootstrap the application
+    │   ├── router.js       # Define routes to map
+    │   └── view-helpers.js # User-defined Handlebars helpers
     ├── bower_components    # Packages installed by Bower
     ├── generators          # Generators used by Scaffolt
     ├── jakelib             # Unified set of tasks for development
@@ -48,6 +61,8 @@ If you want to just run Brunch without using Jake tasks, just use either `web:de
 
 One-line commands are provided for convenience as well for those that want to start running things as quickly as possible by installing depedencies automatically. Use `npm start` to download non-development packages and run the `server:prod` task. Use `npm test` to download all packages and run the `test:all` task.
 
+Handlebars templates are precompiled when building the application. In addition, the full development of Ember is used for `dev` while the production version (no debug/assertion code) is used for `prod`.
+
 
 ## Task List
 While Brunch/Scaffolt/etc. can be used, Jake commands are provided for a simple and consistent interface. These tasks can be executed using `jake`. (`jake [task]`) These are the following available tasks provided out of the box:
@@ -73,6 +88,7 @@ Add/remove [Swag](http://elving.github.io/swag/) to/from the project to add addi
 
 
 ### Scaffolding
+- Unit test files are automatically generated for Ember objects.
 
 #### `gen:model name=[name]` / `del:model name=[name]`
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
@@ -171,7 +187,6 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Framework
 - [Ember](http://emberjs.com/)
-- [Ember Data](https://github.com/emberjs/data)
 
 ### Utilities
 - [jQuery](http://jquery.com)
