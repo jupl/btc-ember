@@ -95,10 +95,10 @@ Generate/destroy an [Ember route](http://emberjs.com/guides/routing/defining-you
 #### `gen:controller name=[name]` / `del:controller name=[name]`
 Generate/destroy an [Ember controller](http://emberjs.com/guides/controllers/).
 
-#### `gen:objectcontroller name=[name]` / `del:objectcontroller name=[name]`
+#### `gen:objcontroller name=[name]` / `del:objcontroller name=[name]`
 Generate/destroy an [Ember object controller](http://emberjs.com/guides/controllers/representing-a-single-model-with-objectcontroller/).
 
-#### `gen:arraycontroller name=[name]` / `del:arraycontroller name=[name]`
+#### `gen:arrcontroller name=[name]` / `del:arrcontroller name=[name]`
 Generate/destroy an [Ember array controller](http://emberjs.com/guides/controllers/representing-multiple-models-with-arraycontroller/). Specify the name in singular form, as it will automatically be pluralized.
 
 #### `gen:style name=[name]` / `del:style name=[name]`
