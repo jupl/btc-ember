@@ -1,0 +1,16 @@
+describe('{{#camelize}}{{pluralName}}{{/camelize}}Controller', function() {
+  var {{#lowercamelize}}{{pluralName}}{{/lowercamelize}}Controller;
+
+  beforeEach(function() {
+    Ember.run(function() {
+      App.reset();
+      {{#lowercamelize}}{{pluralName}}{{/lowercamelize}}Controller = App.{{#camelize}}{{pluralName}}{{/camelize}}Controller.create();
+    });
+  });
+
+  afterEach(function() {
+    Ember.run(function() {
+      {{#lowercamelize}}{{pluralName}}{{/lowercamelize}}Controller.destroy();
+    });
+  });
+});

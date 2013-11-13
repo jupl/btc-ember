@@ -1,8 +1,9 @@
 {
+  "description": "Stylus stylesheet",
   "files": [
     {
-      "from": "style.less.hbs",
-      "to": "app/styles/{{name}}.less"
+      "from": "style.styl.hbs",
+      "to": "app/styles/{{#dasherize}}{{name}}{{/dasherize}}.styl"
     }
   ],
   "dependencies": []

@@ -1,103 +1,38 @@
 {
-  "name": "package-name",
-  "author": "Your Name",
-  "version": "0.0.1",
-  "homepage": "",
-  "description": "Package description",
+  "repository": "git",
 
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-
-  "engines": {
-    "node": "~0.6.10 || 0.8 || 0.9"
-  },
-  
   "scripts": {
-    "start": "./node_modules/.bin/cake help:npm",
-
-    "add:bootstrap":  "./node_modules/.bin/cake add:bootstrap",
-    "add:ember:data": "./node_modules/.bin/cake add:ember:data",
-    "add:fastclick":  "./node_modules/.bin/cake add:fastclick",
-
-    "rem:bootstrap":  "./node_modules/.bin/cake rem:bootstrap",
-    "rem:ember:data": "./node_modules/.bin/cake rem:ember:data",
-    "rem:fastclick":  "./node_modules/.bin/cake rem:fastclick",
-
-    "gen:model:object":       "./node_modules/.bin/cake gen:model:object",
-    "gen:model:ember":        "./node_modules/.bin/cake gen:model:ember",
-    "gen:template":           "./node_modules/.bin/cake gen:template",
-    "gen:template:partial":   "./node_modules/.bin/cake gen:template:partial",
-    "gen:view":               "./node_modules/.bin/cake gen:view",
-    "gen:route":              "./node_modules/.bin/cake gen:route",
-    "gen:controller":         "./node_modules/.bin/cake gen:controller",
-    "gen:controller:object":  "./node_modules/.bin/cake gen:controller:object",
-    "gen:controller:array":   "./node_modules/.bin/cake gen:controller:array",
-    "gen:style":              "./node_modules/.bin/cake gen:style",
-    "gen:test":               "./node_modules/.bin/cake gen:test",
-
-    "del:model:object":       "./node_modules/.bin/cake del:model:object",
-    "del:model:ember":        "./node_modules/.bin/cake del:model:ember",
-    "del:template":           "./node_modules/.bin/cake del:template",
-    "del:template:partial":   "./node_modules/.bin/cake del:template:partial",
-    "del:view":               "./node_modules/.bin/cake del:view",
-    "del:route":              "./node_modules/.bin/cake del:route",
-    "del:controller":         "./node_modules/.bin/cake del:controller",
-    "del:controller:object":  "./node_modules/.bin/cake del:controller:object",
-    "del:controller:array":   "./node_modules/.bin/cake del:controller:array",
-    "del:style":              "./node_modules/.bin/cake del:style",
-    "del:test":               "./node_modules/.bin/cake del:test",
-
-    "cordova:init":         "./node_modules/.bin/cake cordova:init",
-    "cordova:init:android": "./node_modules/.bin/cake cordova:init:android",
-    "cordova:init:ios":     "./node_modules/.bin/cake cordova:init:ios",
-    "cordova:add:android":  "./node_modules/.bin/cake cordova:add:android",
-    "cordova:add:ios":      "./node_modules/.bin/cake cordova:add:ios",
-    "cordova:rem:android":  "./node_modules/.bin/cake cordova:rm:android",
-    "cordova:rem:ios":      "./node_modules/.bin/cake cordova:rm:ios",
-
-    "build:android:dev":    "./node_modules/.bin/cake build:android:dev",
-    "build:android:prod":   "./node_modules/.bin/cake build:android:prod",
-    "build:ios:dev":        "./node_modules/.bin/cake build:ios:dev",
-    "build:ios:prod":       "./node_modules/.bin/cake build:ios:prod",
-    "build:web:dev":        "./node_modules/.bin/cake build:web:dev",
-    "build:web:prod":       "./node_modules/.bin/cake build:web:prod",
-
-    "watch:cordova:dev":    "./node_modules/.bin/cake watch:cordova:dev",
-    "watch:cordova:prod":   "./node_modules/.bin/cake watch:cordova:prod",
-    "watch:web:dev":        "./node_modules/.bin/cake watch:web:dev",
-    "watch:web:prod":       "./node_modules/.bin/cake watch:web:prod",
-
-    "server:dev":           "./node_modules/.bin/cake server:dev",
-    "server:prod":          "./node_modules/.bin/cake server:prod",
-
-    "emulate:android:dev":  "./node_modules/.bin/cake emulate:android:dev",
-    "emulate:android:prod": "./node_modules/.bin/cake emulate:android:prod",
-    "emulate:ios:dev":      "./node_modules/.bin/cake emulate:ios:dev",
-    "emulate:ios:prod":     "./node_modules/.bin/cake emulate:ios:prod"
+    "start": "npm install --production && ./node_modules/.bin/jake server:prod",
+    "test": "npm install && ./node_modules/.bin/jake test:all"
   },
 
   "dependencies": {
-    "sugar": "1.3.8",
-    "brunch": "1.6.1",
-    "wrench": "1.4.4",
-    "cordova": "2.6.0",
-    "scaffolt": "0.1.1",
-    "commander": "1.1.1",
-    "coffee-script": "1.6.2",
+    "bluebird": "~0.9.8",
+    "bower": "~1.2.7",
+    "brunch": "~1.7.8",
+    "jake": "~0.7.2",
+    "jsonfile": "~1.1.0",
+    "scaffolt": "~0.4.2",
+    "sugar": "~1.4.1",
 
-    "javascript-brunch": ">= 1.0 < 1.6",
-    "coffee-script-brunch": ">= 1.0 < 1.6",
-    "coffeelint-brunch": ">= 1.0 < 1.6",
+    "javascript-brunch": ">= 1.0 < 1.8",
+    "css-brunch": ">= 1.0 < 1.8",
+    "stylus-brunch": ">= 1.0 < 1.8",
+    "ember-precompiler-brunch": ">= 1.0 < 1.8",
+    "auto-reload-brunch": ">= 1.0 < 1.8",
+    "clean-css-brunch": ">= 1.0 < 1.8",
+    "uglify-js-brunch": ">= 1.0 < 1.8"
+  },
 
-    "css-brunch": ">= 1.0 < 1.6",
-    "less-brunch": ">= 1.0 < 1.6",
-
-    "ember-precompiler-brunch": ">= 1.0 < 1.6",
-
-    "uglify-js-brunch": ">= 1.0 < 1.6",
-    "clean-css-brunch": ">= 1.0 < 1.6",
-    "auto-reload-brunch": ">= 1.0 < 1.6"
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "karma": "~0.10.4",
+    "karma-chai-plugins": "~0.1.3",
+    "karma-mocha": "~0.1.0",
+    "mocha": "~1.14.0",
+    "mocha-as-promised": "~1.4.0",
+    "nodemon": "~0.7.10",
+    "phantomjs": "~1.9.2",
+    "selenium-webdriver": "~2.37.0"
   }
 }

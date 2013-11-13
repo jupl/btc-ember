@@ -1,0 +1,17 @@
+describe('{{#camelize}}{{name}}{{/camelize}}View', function() {
+  var {{#lowercamelize}}{{name}}{{/lowercamelize}}View;
+
+  beforeEach(function() {
+    Ember.run(function() {
+      App.reset();
+      {{#lowercamelize}}{{name}}{{/lowercamelize}}View = App.{{#camelize}}{{name}}{{/camelize}}View.create();
+      {{#lowercamelize}}{{name}}{{/lowercamelize}}View.append();
+    });
+  });
+
+  afterEach(function() {
+    Ember.run(function() {
+      {{#lowercamelize}}{{name}}{{/lowercamelize}}View.destroy();
+    });
+  });
+});

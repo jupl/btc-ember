@@ -1,0 +1,41 @@
+{
+  "name": "package-name",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "chai": "~1.8.1",
+    "ember": "1.1.2",
+    "handlebars": "1.0.0",
+    "jquery": "~2.0.3",
+    "mocha": "~1.14.0",
+    "sinon": "http://sinonjs.org/releases/sinon-1.7.3.js",
+    "sinon-chai": "~2.4.0"
+  },
+  "overrides": {
+    "ember": {
+      "main": [
+        "ember.js",
+        "ember.prod.js"
+      ]
+    },
+    "handlebars": {
+      "main": "handlebars.runtime.js"
+    },
+    "mocha": {
+      "main": [
+        "mocha.css",
+        "mocha.js"
+      ]
+    },
+    "sinon-chai": {
+      "main": "lib/sinon-chai.js",
+      "dependencies": {
+        "sinon": "*",
+        "chai": "*"
+      }
+    }
+  }
+}
