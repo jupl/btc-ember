@@ -94,10 +94,10 @@ Add/remove [Swag](http://elving.github.io/swag/) to/from the project to add addi
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
 
 #### `gen:template name=[name]` / `del:template name=[name]`
-Generate/destroy a Handlebars template.
+Generate/destroy a Handlebars [template](http://emberjs.com/guides/templates/handlebars-basics/).
 
 #### `gen:partial name=[name]` / `del:partial name=[name]`
-Generate/destroy a partial Handlebars template.
+Generate/destroy a [partial](http://emberjs.com/guides/templates/rendering-with-helpers/#toc_the-code-partial-code-helper) Handlebars template.
 
 #### `gen:component name=[name]` / `del:component name=[name]`
 Generate/destroy an [Ember component](http://emberjs.com/guides/components/defining-a-component/) and Handlebars template.
@@ -121,7 +121,7 @@ Generate/destroy an [Ember array controller](http://emberjs.com/guides/controlle
 Generate/destroy a Stylus stylesheet file.
 
 #### `gen:codetest name=[name]` / `del:codetest name=[name]`
-Generate/destroy a test file with the given test name for testing code. (ex: unit testing)
+Generate/destroy a test file with the given test name for testing code. (ex: unit testing, integration testing)
 
 #### `gen:sitetest name=[name]` / `del:sitetest name=[name]`
 Generate/destroy a test file with the given test name for testing the site. (ex: functional testing)
