@@ -25,7 +25,7 @@ module.exports.environments = ['dev', 'prod'];
 
 /**
  * Modify configuration to match the development environment. This entails
- * adding test files to the build.
+ * adding test files to the build and not use Ember prod files.
  * @param  {Object} config
  */
 function devEnvironment(config) {
@@ -38,16 +38,19 @@ function devEnvironment(config) {
 
   // Add test css files
   cssJoinTo['test/stylesheets/test.css'] = /^bower_components[\\\/]mocha/;
+
+  // Do not use Ember's prod files in development
+  addIgnored(config, /ember(-data)?\.prod\.js$/);
 }
 
 /**
  * Modify configuration to match the production environment. This entails
  * ignoring test files, disabling source maps, disabling auto-reload, and
- * minifying/uglifying code.
+ * minifying/uglifying code. In addition only use Ember prod files.
  * @param  {Object} config
  */
 function prodEnvironment(config) {
-  addIgnored(config, /^test/);
+  addIgnored(config, /^test/, /ember(-data)?(?!\.prod)\.js$/);
   config.optimize = true;
   config.sourceMaps = false;
   if(!config.plugins) {

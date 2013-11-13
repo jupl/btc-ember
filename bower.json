@@ -15,6 +15,12 @@
     "sinon-chai": "~2.4.0"
   },
   "overrides": {
+    "ember": {
+      "main": [
+        "ember.js",
+        "ember.prod.js"
+      ]
+    },
     "handlebars": {
       "main": "handlebars.runtime.js"
     },
