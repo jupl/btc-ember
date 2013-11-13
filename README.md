@@ -88,7 +88,7 @@ Add/remove [Swag](http://elving.github.io/swag/) to/from the project to add addi
 
 
 ### Scaffolding
-- Unit test files are automatically generated for Ember objects.
+- Unit test files are automatically generated for models, controllers, and views.
 
 #### `gen:model name=[name]` / `del:model name=[name]`
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
@@ -105,7 +105,7 @@ Generate/destroy an [Ember component](http://emberjs.com/guides/components/defin
 #### `gen:view name=[name]` / `del:view name=[name]`
 Generate/destroy an [Ember view](http://emberjs.com/guides/views/defining-a-view/).
 
-#### `gen:route` / `del:route`
+#### `gen:route name=[name]` / `del:route name=[name]`
 Generate/destroy an [Ember route](http://emberjs.com/guides/routing/defining-your-routes/).
 
 #### `gen:controller name=[name]` / `del:controller name=[name]`
@@ -134,7 +134,7 @@ Tests leverage [PhantomJS](http://phantomjs.org/), [Mocha](http://visionmedia.gi
 Run all tests listed below once. For more information on reporters see below.
 
 #### `test:code [reporter=progress] [watch=false]`
-Run code-based tests (ex. unit tests) using Karma. Karma is preconfigured out of the box to run with PhantomJS. A Karma reporter can be specified with the `reporter` option. If you run this task with `watch=true` Karma will auto-run on file changes. Otherwise by default Karma runs once. In addition, if you run a build (see below) with the `dev` environment the tests are included with a reporter under `test` to run in browsers. (ex. visit `http://locahost:[port]/test`)
+Run code-based tests (ex. unit tests, integration tests) using Karma. Karma is preconfigured out of the box to run with PhantomJS. A Karma reporter can be specified with the `reporter` option. If you run this task with `watch=true` Karma will auto-run on file changes. Otherwise by default Karma runs once. In addition, if you run a build (see below) with the `dev` environment the tests are included with a reporter under `test` to run in browsers. (ex. visit `http://locahost:[port]/test`)
 
 #### `test:site [reporter=spec] [watch=false]`
 Run site-based tests (ex. system tests) using Mocha and WebDriverJS. A Brunch server is started up temporarily to interact with the site. A Mocha reporter can be specified with the `reporter` option. If you run this task with `watch=true` Mocha will auto-run on file changes with [nodemon](http://remy.github.io/nodemon/). Otherwise by default Mocha runs once. The global method `getDriver` is provided to get a setup and built driver. WebDriverJS' use of Promises can be combined with Mocha as Promised to handle asynchronous behavior easily. ex:
