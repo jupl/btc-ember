@@ -3,6 +3,11 @@ if(window.Swag) {
   Swag.registerHelpers();
 }
 
+// Initialize FastClick if available
+if(window.FastClick) {
+  new FastClick(document.body);
+}
+
 // If we are using Cordova, wait until device is ready
 if(window.cordova) {
   document.addEventListener('deviceready', preInitialize, false);
