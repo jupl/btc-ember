@@ -180,6 +180,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 
 ### Core
 - [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.5.3
+- [Cordova Brunch](https://github.com/jupl/brunch-toolchain) 0.4.1
 
 ### Languages
 - [Handlebars](http://handlebarsjs.com/)
