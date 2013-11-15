@@ -8,6 +8,8 @@ describe('IndexController', function() {
     });
   });
 
+
+
   afterEach(function() {
     Ember.run(function() {
       indexController.destroy();
