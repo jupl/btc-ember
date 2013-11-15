@@ -1,5 +1,8 @@
 # Changelog
 
+#### 0.4.1 (November 14, 2013)
+- Update BTC
+
 ### 0.4.0 (November 12, 2013)
 - Update BTC
 - Update libraries

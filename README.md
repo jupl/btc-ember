@@ -1,4 +1,4 @@
-# Cinder Brunch 0.4.0
+# Cinder Brunch 0.4.1
 
 [<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
 [<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
@@ -121,10 +121,10 @@ Add/remove specified device support to the Cordova project.
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
 
 #### `gen:template name=[name]` / `del:template name=[name]`
-Generate/destroy a Handlebars template.
+Generate/destroy a Handlebars [template](http://emberjs.com/guides/templates/handlebars-basics/).
 
 #### `gen:partial name=[name]` / `del:partial name=[name]`
-Generate/destroy a partial Handlebars template.
+Generate/destroy a [partial](http://emberjs.com/guides/templates/rendering-with-helpers/#toc_the-code-partial-code-helper) Handlebars template.
 
 #### `gen:component name=[name]` / `del:component name=[name]`
 Generate/destroy an [Ember component](http://emberjs.com/guides/components/defining-a-component/) and Handlebars template.
@@ -148,23 +148,23 @@ Generate/destroy an [Ember array controller](http://emberjs.com/guides/controlle
 Generate/destroy a Stylus stylesheet file.
 
 #### `gen:codetest name=[name]` / `del:codetest name=[name]`
-Generate/destroy a test file with the given test name for testing code. (ex: unit testing)
+Generate/destroy a test file with the given test name for testing code. (ex: unit testing, integration testing)
 
 #### `gen:sitetest name=[name]` / `del:sitetest name=[name]`
 Generate/destroy a test file with the given test name for testing the site. (ex: functional testing)
 
 
 ### Testing
-Tests leverage [PhantomJS](http://phantomjs.org/), [Mocha](http://visionmedia.github.io/mocha/), [Mocha as Promised](https://github.com/domenic/mocha-as-promised), and [Chai](http://chaijs.com/). Code and site testing is provided. Code testing adds [Sinon](http://sinonjs.org/) and [Sinon-Chai](https://github.com/domenic/sinon-chai).
+Tests leverage [Mocha](http://visionmedia.github.io/mocha/), [Mocha as Promised](https://github.com/domenic/mocha-as-promised), and [Chai](http://chaijs.com/). Code and site testing is provided. Code testing adds [Sinon](http://sinonjs.org/) and [Sinon-Chai](https://github.com/domenic/sinon-chai).
 
-#### `test:all [codereporter=progress] [sitereporter=spec]`
+#### `test:all [codereporter=progress] [sitereporter=spec] [browsers=[browsers]]`
 Run all tests listed below once. For more information on reporters see below.
 
-#### `test:code [reporter=progress] [watch=false]`
-Run code-based tests (ex. unit tests, integration tests) using Karma. Karma is preconfigured out of the box to run with PhantomJS. A Karma reporter can be specified with the `reporter` option. If you run this task with `watch=true` Karma will auto-run on file changes. Otherwise by default Karma runs once. In addition, if you run a build (see below) with the `dev` environment the tests are included with a reporter under `test` to run in browsers. (ex. visit `http://locahost:[port]/test`)
+#### `test:code [reporter=progress] [watch=false] [browsers=[browsers]]`
+Run code-based tests (ex. unit tests) using Karma. Karma is preconfigured to run with [PhantomJS](http://phantomjs.org/). A Karma reporter can be specified with the `reporter` option. You can also override the browsers to run with with the `browsers` option. (ex: `browsers=Chrome,Firefox,Safari`) If you run this task with `watch=true` Karma will auto-run on file changes. Otherwise by default Karma runs once. You can also run the server while watching files with `watch=server`. In addition, if you run a build (see below) with the `dev` environment the tests are included with a reporter under `test` to run in browsers. (ex. visit `http://locahost:[port]/test`)
 
 #### `test:site [reporter=spec] [watch=false]`
-Run site-based tests (ex. system tests) using Mocha and WebDriverJS. A Brunch server is started up temporarily to interact with the site. A Mocha reporter can be specified with the `reporter` option. If you run this task with `watch=true` Mocha will auto-run on file changes with [nodemon](http://remy.github.io/nodemon/). Otherwise by default Mocha runs once. The global method `getDriver` is provided to get a setup and built driver. WebDriverJS' use of Promises can be combined with Mocha as Promised to handle asynchronous behavior easily. ex:
+Run site-based tests (ex. system tests) using Mocha, PhantomJS, and WebDriverJS. A Brunch server is started up temporarily to interact with the site. A Mocha reporter can be specified with the `reporter` option. If you run this task with `watch=true` Mocha will auto-run on file changes with [nodemon](http://remy.github.io/nodemon/). Otherwise by default Mocha runs once. The global method `getDriver` is provided to get a setup and built driver. WebDriverJS' use of Promises can be combined with Mocha as Promised to handle asynchronous behavior easily. ex:
 
 ```js
 describe('Sample', function() {
@@ -211,16 +211,5 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 ## Libraries
 
 ### Core
-- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.5.3
+- [Cinder Brunch](https://github.com/jupl/brunch-toolchain) 0.4.1
 - [Cordova Brunch](https://github.com/jupl/brunch-toolchain) 0.4.1
-
-### Languages
-- [Handlebars](http://handlebarsjs.com/)
-- [Stylus](http://learnboost.github.io/stylus/)
-
-### Framework
-- [Ember](http://emberjs.com/)
-
-### Utilities
-- [jQuery](http://jquery.com)
-- [Nib](http://visionmedia.github.io/nib/)
