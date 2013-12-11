@@ -18,7 +18,7 @@ namespace('add', function() {
   desc('Add Swag (Handlebar helpers)');
   task('swag', function() {
     editBower(function() {
-      this.dependencies.swag = '~0.3.1';
+      this.dependencies.swag = '~0.5.0';
     });
   });
 
