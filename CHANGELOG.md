@@ -1,5 +1,19 @@
 # Changelog
 
+#### WIP
+- Update BTC
+  - Fix Windows support
+  - Internal fix to bring back spawn options
+  - Add specific WebStorm and IntelliJ files to gitignore
+  - Stop worrying about absolute paths
+  - Mark execute promises as cancellable
+  - Move auto-reload-brunch to devDependencies
+  - Allow project's bower to be run if root (or root-like)
+  - Update dependencies
+  - Added `bower:clean` task
+  - Changed behavior of `gen`/`del` tasks
+- Update libraries (Ember, Handlebars, Swag)
+
 #### 0.4.1 (November 14, 2013)
 - Update BTC
 
