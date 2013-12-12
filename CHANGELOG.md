@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+### 0.5.0 (December 12, 2013)
 - Update BTC
   - Fix Windows support
   - Internal fix to bring back spawn options
