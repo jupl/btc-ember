@@ -1,4 +1,4 @@
-# Cinder Brunch 0.4.1
+# Cinder Brunch 0.5.0
 [<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
 [<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
 
