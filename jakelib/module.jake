@@ -3,9 +3,6 @@
 var generators = require('./lib').generators;
 var jsonfile = require('jsonfile');
 var Promise = require('bluebird');
-var resolvePath = require('./lib').resolvePath;
-
-var bowerFile = resolvePath('bower.json');
 
 namespace('add', function() {
   desc('Add normalize.css');
@@ -18,7 +15,7 @@ namespace('add', function() {
   desc('Add Swag (Handlebar helpers)');
   task('swag', function() {
     editBower(function() {
-      this.dependencies.swag = '~0.3.1';
+      this.dependencies.swag = '~0.5.0';
     });
   });
 
@@ -124,7 +121,7 @@ namespace('rem', function() {
 });
 
 function editBower(callback) {
-  var json = jsonfile.readFileSync(bowerFile);
+  var json = jsonfile.readFileSync('bower.json');
   callback.call(json);
-  jsonfile.writeFileSync(bowerFile, json);
+  jsonfile.writeFileSync('bower.json', json);
 }

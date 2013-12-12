@@ -1,8 +1,7 @@
 // These are tasks that are undocumented, as they tend to be used by other tasks.
 require('sugar');
 var config = require('../brunch-config').config;
-var execute = require('./lib').execute;
-var localBinCommand = require('./lib').localBinCommand;
+var scaffolt = require('./lib').npmBin('scaffolt');
 var platforms = require('../setup/platform').platforms;
 
 // Set default task to list available tasks
@@ -24,29 +23,19 @@ namespace('clean', function() {
 // uses placeholder text since it is not used. (in fact, the text
 // 'placeholder' is used)
 namespace('scaffold', function() {
-  task('gen', function(type) {
-    var name = process.env.name;
-    validateName(name);
-    return execute(localBinCommand('scaffolt', type + ' ' + name));
+  task('gen', function(type, name) {
+    return scaffolt.execute(type, name);
   });
 
-  task('del', function(type) {
-    var name = process.env.name;
-    validateName(name);
-    return execute(localBinCommand('scaffolt', type + ' ' + name + ' -r'));
+  task('del', function(type, name) {
+    return scaffolt.execute(type, name, '--revert');
   });
 
   task('add', function(type) {
-    return execute(localBinCommand('scaffolt', type + ' placeholder'));
+    return scaffolt.execute(type, 'placeholder');
   });
 
   task('rem', function(type) {
-    return execute(localBinCommand('scaffolt', type + ' placeholder -r'));
+    return scaffolt.execute(type, 'placeholder', '--revert');
   });
 });
-
-function validateName(name) {
-  if(!name) {
-    fail('name parameter is required. ex: jake ... name=[name]');
-  }
-}
