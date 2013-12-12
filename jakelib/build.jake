@@ -1,5 +1,7 @@
 // Brunch build tasks
 var brunch = require('./lib').npmBin('brunch');
+var cordova = require('./lib').npmBin('cordova');
+var devices = require('./lib').devices;
 
 namespace('build', function() {
   desc('Build project (web or device) for development');

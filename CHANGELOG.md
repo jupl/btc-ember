@@ -13,6 +13,13 @@
   - Added `bower:clean` task
   - Changed behavior of `gen`/`del` tasks
 - Update libraries (Ember, Handlebars, Swag)
+- Update Cordova Brunch
+  - Fix typo in copying `config.xml`
+  - Update Cordova to 3.2
+    - Stop referencing `res`
+  - Rename `cordova:init` to `cordova:gen`
+  - Fix broken URL for device.js in generator
+  - Change device.js code from last update to work better for testing
 
 #### 0.4.1 (November 14, 2013)
 - Update BTC
