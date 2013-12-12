@@ -7,7 +7,7 @@
   },
 
   "dependencies": {
-    "bluebird": "~0.9.8",
+    "bluebird": "~0.11.5",
     "bower": "~1.2.7",
     "brunch": "~1.7.8",
     "jake": "~0.7.2",
@@ -19,20 +19,20 @@
     "css-brunch": ">= 1.0 < 1.8",
     "stylus-brunch": ">= 1.0 < 1.8",
     "ember-precompiler-brunch": ">= 1.0 < 1.8",
-    "auto-reload-brunch": ">= 1.0 < 1.8",
     "clean-css-brunch": ">= 1.0 < 1.8",
     "uglify-js-brunch": ">= 1.0 < 1.8"
   },
 
   "devDependencies": {
+    "auto-reload-brunch": ">= 1.0 < 1.8",
     "chai": "~1.8.1",
     "karma": "~0.10.4",
     "karma-chai-plugins": "~0.1.3",
     "karma-mocha": "~0.1.0",
-    "mocha": "~1.14.0",
+    "mocha": "~1.15.1",
     "mocha-as-promised": "~1.4.0",
     "nodemon": "~0.7.10",
     "phantomjs": "~1.9.2",
-    "selenium-webdriver": "~2.37.0"
+    "selenium-webdriver": "~2.38.1"
   }
 }

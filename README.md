@@ -1,5 +1,4 @@
-# Cinder Brunch 0.4.1
-
+# Cinder Brunch 0.5.0
 [<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
 [<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
 
@@ -11,7 +10,6 @@ For a mobile/Cordova friendly variant, check out [this skeleton](https://github.
 
 
 ## File Structure
-
     ├── app                 # App is built here. Look at Brunch for more info.
     │   ├── assets          # Static files that are just copied
     │   ├── components      # Ember components
@@ -52,15 +50,15 @@ For a mobile/Cordova friendly variant, check out [this skeleton](https://github.
 
 
 ## Setup
-
 1. Install node.js.
-2. If doing development, install Jake.
+2. If using Windows and leveraging Bower, install git.
+3. If doing development, install Jake.
 4. Open a terminal window and navigate to the project directory.
 5. Execute the command `npm install` to install all package dependencies.
 
 
 ## Notes
-If you want to just run Brunch without using Jake tasks, just use either `web:dev` or `web:prod` for the environment. ex: `brunch watch --server --environment web:prod`
+If you want to just run Brunch without using Jake tasks, just use either `web:dev` or `web:prod` for the environment. (ex: `brunch watch --server --environment web:prod`)
 
 One-line commands are provided for convenience as well for those that want to start running things as quickly as possible by installing depedencies automatically. Use `npm start` to download non-development packages and run the `server:prod` task. Use `npm test` to download all packages and run the `test:all` task.
 
@@ -75,6 +73,9 @@ While Brunch/Scaffolt/etc. can be used, Jake commands are provided for a simple 
 
 #### `bower:install`
 Download and preinstall any Bower dependencies in advance. You can run this if you want to download Bower dependencies in advance.
+
+#### `bower:clean`
+Remove downloaded Bower dependencies. This is useful if you want to reinstall dependencies.
 
 
 ### Extras
@@ -91,42 +92,45 @@ Add/remove [Swag](http://elving.github.io/swag/) to/from the project to add addi
 
 
 ### Scaffolding
-- Unit test files are automatically generated for models, controllers, and views.
+Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command. (ex: `jake gen codetest=test1 sitetest=test2`) Unit test files are automatically generated for models, controllers, and views.
 
-#### `gen:model name=[name]` / `del:model name=[name]`
+#### `gen` / `del`
+List available scaffolds.
+
+#### `gen model=[name]` / `del model=[name]`
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
 
-#### `gen:template name=[name]` / `del:template name=[name]`
+#### `gen template=[name]` / `del template=[name]`
 Generate/destroy a Handlebars [template](http://emberjs.com/guides/templates/handlebars-basics/).
 
-#### `gen:partial name=[name]` / `del:partial name=[name]`
+#### `gen partial=[name]` / `del partial=[name]`
 Generate/destroy a [partial](http://emberjs.com/guides/templates/rendering-with-helpers/#toc_the-code-partial-code-helper) Handlebars template.
 
-#### `gen:component name=[name]` / `del:component name=[name]`
+#### `gen component=[name]` / `del component=[name]`
 Generate/destroy an [Ember component](http://emberjs.com/guides/components/defining-a-component/) and Handlebars template.
 
-#### `gen:view name=[name]` / `del:view name=[name]`
+#### `gen view=[name]` / `del view=[name]`
 Generate/destroy an [Ember view](http://emberjs.com/guides/views/defining-a-view/).
 
-#### `gen:route name=[name]` / `del:route name=[name]`
+#### `gen route=[name]` / `del route=[name]`
 Generate/destroy an [Ember route](http://emberjs.com/guides/routing/defining-your-routes/).
 
-#### `gen:controller name=[name]` / `del:controller name=[name]`
+#### `gen controller=[name]` / `del controller=[name]`
 Generate/destroy an [Ember controller](http://emberjs.com/guides/controllers/).
 
-#### `gen:objcontroller name=[name]` / `del:objcontroller name=[name]`
+#### `gen objcontroller=[name]` / `del objcontroller=[name]`
 Generate/destroy an [Ember object controller](http://emberjs.com/guides/controllers/representing-a-single-model-with-objectcontroller/).
 
-#### `gen:arrcontroller name=[name]` / `del:arrcontroller name=[name]`
+#### `gen arrcontroller=[name]` / `del arrcontroller=[name]`
 Generate/destroy an [Ember array controller](http://emberjs.com/guides/controllers/representing-multiple-models-with-arraycontroller/). Specify the name in singular form, as it will automatically be pluralized.
 
-#### `gen:style name=[name]` / `del:style name=[name]`
+#### `gen style=[name]` / `del style=[name]`
 Generate/destroy a Stylus stylesheet file.
 
-#### `gen:codetest name=[name]` / `del:codetest name=[name]`
-Generate/destroy a test file with the given test name for testing code. (ex: unit testing, integration testing)
+#### `gen codetest=[name]` / `del codetest=[name]`
+Generate/destroy a test file with the given test name for testing code. (ex: unit testing)
 
-#### `gen:sitetest name=[name]` / `del:sitetest name=[name]`
+#### `gen sitetest=[name]` / `del sitetest=[name]`
 Generate/destroy a test file with the given test name for testing the site. (ex: functional testing)
 
 
@@ -182,7 +186,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Libraries
 
 ### Core
-- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.5.4
+- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.5.8
 
 ### Languages
 - [Handlebars](http://handlebarsjs.com/)
