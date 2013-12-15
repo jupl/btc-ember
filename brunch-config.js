@@ -11,6 +11,10 @@ exports.config = setup({
     }
   },
 
+  server: {
+    path: 'server'
+  },
+
   files: {
     javascripts: {
       joinTo: {
