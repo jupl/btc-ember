@@ -94,7 +94,7 @@ Add/remove [Swag](http://elving.github.io/swag/) to/from the project to add addi
 
 
 ### Scaffolding
-Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command, as well as separating names with commas. (ex: `jake gen codetest=test1,test2 sitetest=test3`) Unit test files are automatically generated for models, controllers, and views.
+Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command, as well as separating names with commas. (ex: `jake gen codetest=test1,test2 sitetest=test3`) Unit test files are automatically generated for models, controllers, components, and views.
 
 #### `gen` / `del`
 List available scaffolds.

@@ -1,5 +1,8 @@
 # Changelog
 
+#### WIP
+- Add test file to component generator
+
 #### 0.5.1 (December 14, 2013)
 - Update BTC
   - Allow multiple names to be specified per scaffold
