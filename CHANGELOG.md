@@ -1,5 +1,14 @@
 # Changelog
 
+#### 0.5.2 (December 21, 2013)
+- Update Cordova Brunch
+  - Add task to add/remove plugins
+  - Add task to upgrade device platform
+  - Add task to list device platforms and plugins
+- Update BTC
+  - Update Mocha
+  - Update WebDriverJS
+
 #### 0.5.1 (December 14, 2013)
 - Update Cordova to 3.3
 - Update BTC
