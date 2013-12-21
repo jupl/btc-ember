@@ -2,6 +2,7 @@
 
 #### WIP
 - Add test file to component generator
+- Add Ember Data back
 - Update BTC
   - Update Mocha
   - Update WebDriverJS
