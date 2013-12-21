@@ -2,6 +2,9 @@
 
 #### WIP
 - Add test file to component generator
+- Update BTC
+  - Update Mocha
+  - Update WebDriverJS
 
 #### 0.5.1 (December 14, 2013)
 - Update BTC
