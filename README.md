@@ -1,4 +1,4 @@
-# Cinder Brunch 0.5.1
+# Cinder Brunch 0.5.2
 [<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
 [<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
 
@@ -19,6 +19,7 @@ For a mobile/Cordova friendly variant, check out [this skeleton](https://github.
     │   ├── styles          # Stylus stylesheets
     │   ├── templates       # Handlebars templates and partials
     │   │   └── components  # Handlebars templates for Ember components
+    │   ├── views           # Ember views
     │   ├── app.js          # Configure main application
     │   ├── app.styl        # Application/page styling definition
     │   ├── base.styl       # Stylus variables and mixins for the application
@@ -88,12 +89,15 @@ Add/remove the ubiquitous library [jQuery](http://jquery.com/) to/from the proje
 #### `add:normalize` / `rem:normalize`
 Add/remove [normalize.css](http://necolas.github.io/normalize.css/) to ensure a consistent starting point in styling between different browsers.
 
+#### `add:data` / `rem:data`
+Add/remove [Ember Data](https://github.com/emberjs/data) to/from the project for a data persistence layer.
+
 #### `add:swag` / `rem:swag`
 Add/remove [Swag](http://elving.github.io/swag/) to/from the project to add additional helpers for Handlebars.
 
 
 ### Scaffolding
-Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command, as well as separating names with commas. (ex: `jake gen codetest=test1,test2 sitetest=test3`) Unit test files are automatically generated for models, controllers, and views.
+Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command, as well as separating names with commas. (ex: `jake gen codetest=test1,test2 sitetest=test3`) Unit test files are automatically generated for models, controllers, components, and views.
 
 #### `gen` / `del`
 List available scaffolds.
@@ -101,8 +105,11 @@ List available scaffolds.
 #### `gen model=[name]` / `del model=[name]`
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
 
+#### `gen data=[name]` / `del data=[name]`
+Generate/destroy an [Ember Data model](http://emberjs.com/guides/models/defining-models/) that will be used to represent a model. Ember Data is required. (see `add:data` task)
+
 #### `gen template=[name]` / `del template=[name]`
-Generate/destroy a Handlebars [template](http://emberjs.com/guides/templates/handlebars-basics/).
+Generate/destroy a Handlebars [template](http://emberjs.com/guides/templates/handlebars-basics/). You can specify subdirectories. (ex: `jake gen template=products/index`)
 
 #### `gen partial=[name]` / `del partial=[name]`
 Generate/destroy a [partial](http://emberjs.com/guides/templates/rendering-with-helpers/#toc_the-code-partial-code-helper) Handlebars template.

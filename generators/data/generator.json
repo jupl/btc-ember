@@ -1,0 +1,14 @@
+{
+  "description": "Ember Data model",
+  "files": [
+    {
+      "from": "model.js.hbs",
+      "to": "app/models/{{#dasherize}}{{name}}{{/dasherize}}.js"
+    },
+    {
+      "from": "test.js.hbs",
+      "to": "test/code/models/{{#dasherize}}{{name}}{{/dasherize}}.js"
+    }
+  ],
+  "dependencies": []
+}

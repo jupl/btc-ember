@@ -1,5 +1,12 @@
 # Changelog
 
+#### 0.5.2 (December 21, 2013)
+- Add test file to component generator
+- Add Ember Data back
+- Update BTC
+  - Update Mocha
+  - Update WebDriverJS
+
 #### 0.5.1 (December 14, 2013)
 - Update BTC
   - Allow multiple names to be specified per scaffold

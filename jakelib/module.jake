@@ -19,6 +19,13 @@ namespace('add', function() {
     });
   });
 
+  desc('Add Ember Data (Handlebar helpers)');
+  task('data', function() {
+    editBower(function() {
+      this.dependencies['ember-data'] = '~1.0.0';
+    });
+  });
+
   generators.forEach(function(generator) {
     if(generator.isModule) {
       desc('Add ' + generator.description);
@@ -45,6 +52,13 @@ namespace('rem', function() {
   task('swag', function() {
     editBower(function() {
       delete this.dependencies.swag;
+    });
+  });
+
+  desc('Remove Ember Data');
+  task('data', function() {
+    editBower(function() {
+      delete this.dependencies['ember-data'];
     });
   });
 
