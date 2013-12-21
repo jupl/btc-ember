@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+#### 0.5.2 (December 21, 2013)
 - Add test file to component generator
 - Add Ember Data back
 - Update BTC
