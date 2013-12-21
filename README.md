@@ -89,6 +89,9 @@ Add/remove the ubiquitous library [jQuery](http://jquery.com/) to/from the proje
 #### `add:normalize` / `rem:normalize`
 Add/remove [normalize.css](http://necolas.github.io/normalize.css/) to ensure a consistent starting point in styling between different browsers.
 
+#### `add:data` / `rem:data`
+Add/remove [Ember Data](https://github.com/emberjs/data) to/from the project for a data persistence layer.
+
 #### `add:swag` / `rem:swag`
 Add/remove [Swag](http://elving.github.io/swag/) to/from the project to add additional helpers for Handlebars.
 
@@ -101,6 +104,9 @@ List available scaffolds.
 
 #### `gen model=[name]` / `del model=[name]`
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
+
+#### `gen data=[name]` / `del data=[name]`
+Generate/destroy an [Ember Data model](http://emberjs.com/guides/models/defining-models/) that will be used to represent a model. Ember Data is required. (see `add:data` task)
 
 #### `gen template=[name]` / `del template=[name]`
 Generate/destroy a Handlebars [template](http://emberjs.com/guides/templates/handlebars-basics/). You can specify subdirectories. (ex: `jake gen template=products/index`)
