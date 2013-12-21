@@ -102,7 +102,7 @@ List available scaffolds.
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
 
 #### `gen template=[name]` / `del template=[name]`
-Generate/destroy a Handlebars [template](http://emberjs.com/guides/templates/handlebars-basics/).
+Generate/destroy a Handlebars [template](http://emberjs.com/guides/templates/handlebars-basics/). You can specify subdirectories. (ex: `jake gen template=products/index`)
 
 #### `gen partial=[name]` / `del partial=[name]`
 Generate/destroy a [partial](http://emberjs.com/guides/templates/rendering-with-helpers/#toc_the-code-partial-code-helper) Handlebars template.
