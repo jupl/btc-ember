@@ -8,6 +8,10 @@
     {
       "from": "template.hbs.hbs",
       "to": "app/templates/components/{{#dasherize}}{{name}}{{/dasherize}}.hbs"
+    },
+    {
+      "from": "test.js.hbs",
+      "to": "test/code/components/{{#dasherize}}{{name}}{{/dasherize}}.js"
     }
   ],
   "dependencies": []

@@ -12,6 +12,13 @@ namespace('add', function() {
     });
   });
 
+  desc('Add Ember Data (Handlebar helpers)');
+  task('data', function() {
+    editBower(function() {
+      this.dependencies['ember-data'] = '~1.0.0';
+    });
+  });
+
   desc('Add Swag (Handlebar helpers)');
   task('swag', function() {
     editBower(function() {
@@ -73,6 +80,13 @@ namespace('rem', function() {
   task('normalize', function() {
     editBower(function() {
       delete this.dependencies['normalize-css'];
+    });
+  });
+
+  desc('Remove Ember Data');
+  task('data', function() {
+    editBower(function() {
+      delete this.dependencies['ember-data'];
     });
   });
 

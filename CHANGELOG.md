@@ -1,6 +1,8 @@
 # Changelog
 
 #### 0.5.2 (December 21, 2013)
+- Add test file to component generator
+- Add Ember Data back
 - Update Cordova Brunch
   - Add task to add/remove plugins
   - Add task to upgrade device platform
