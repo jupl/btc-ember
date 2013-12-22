@@ -206,3 +206,4 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ### Utilities
 - [jQuery](http://jquery.com)
 - [Nib](http://visionmedia.github.io/nib/)
+- [Ember Data](https://github.com/emberjs/data)
