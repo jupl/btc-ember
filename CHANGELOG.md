@@ -1,6 +1,8 @@
 # Changelog
 
 #### WIP
+- Update Ember
+- Update Handlebars
 - Update BTC
   - Fix watch in `test:code`
   - Update Mocha
