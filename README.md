@@ -1,4 +1,4 @@
-# Cinder Brunch 0.5.2
+# Cinder Brunch 0.5.3
 [<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
 [<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
 
@@ -232,5 +232,5 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 ## Libraries
 
 ### Core
-- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.5.2
+- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.5.3
 - [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.6.1
