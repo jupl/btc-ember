@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+#### 0.5.3 (January 16, 2014)
 - Update Ember
 - Update Handlebars
 - Update BTC
