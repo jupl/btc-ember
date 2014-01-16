@@ -1,4 +1,4 @@
-# Cinder Brunch 0.5.2
+# Cinder Brunch 0.5.3
 [<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
 [<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
 
@@ -194,7 +194,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Libraries
 
 ### Core
-- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.6.1
+- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.6.2
 
 ### Languages
 - [Handlebars](http://handlebarsjs.com/)
