@@ -1,5 +1,12 @@
 # Changelog
 
+#### WIP
+- Update BTC
+  - Fix watch in `test:code`
+  - Update Mocha
+  - Update Bluebird
+  - Update Nodemon
+
 #### 0.5.2 (December 21, 2013)
 - Add test file to component generator
 - Add Ember Data back
