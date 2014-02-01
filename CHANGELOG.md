@@ -1,5 +1,13 @@
 # Changelog
 
+#### WIP
+- Update BTC
+  - Add `npm:clean` task
+  - Clean up package.json
+  - Update jQuery
+  - Update normalize.css
+  - Update Chai
+
 #### 0.5.3 (January 16, 2014)
 - Update Ember
 - Update Handlebars
