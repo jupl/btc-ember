@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+#### 0.5.4 (February 1, 2014)
 - Update BTC
   - Add `npm:clean` task
   - Clean up package.json
