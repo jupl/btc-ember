@@ -1,4 +1,4 @@
-# Cinder Brunch 0.5.3
+# Cinder Brunch 0.5.4
 [<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
 [<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
 
@@ -71,20 +71,23 @@ Handlebars templates are precompiled when building the application. In addition,
 While Brunch/Scaffolt/etc. can be used, Jake commands are provided for a simple and consistent interface. These tasks can be executed using `jake`. (`jake [task]`) These are the following available tasks provided out of the box:
 
 
+### NPM
+
+#### `npm:clean`
+Remove downloaded Node modules. This is useful if you want to reinstall dependencies. (ex. updated/corrupted package(s)) Remember that you need to call `npm install` to install dependencies.
+
+
 ### Bower
 
 #### `bower:install`
 Download and preinstall any Bower dependencies in advance. You can run this if you want to download Bower dependencies in advance.
 
 #### `bower:clean`
-Remove downloaded Bower dependencies. This is useful if you want to reinstall dependencies. (ex. updated package)
+Remove downloaded Bower dependencies. This is useful if you want to reinstall dependencies. (ex. updated/corrupted package(s))
 
 
 ### Extras
 These commands add additional features/items to the project that are not included by default.
-
-#### `add:jquery` / `rem:jquery`
-Add/remove the ubiquitous library [jQuery](http://jquery.com/) to/from the project.
 
 #### `add:normalize` / `rem:normalize`
 Add/remove [normalize.css](http://necolas.github.io/normalize.css/) to ensure a consistent starting point in styling between different browsers.
@@ -232,5 +235,5 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 ## Libraries
 
 ### Core
-- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.5.3
+- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.5.4
 - [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.6.2

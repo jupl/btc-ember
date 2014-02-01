@@ -8,7 +8,7 @@ namespace('add', function() {
   desc('Add normalize.css');
   task('normalize', function() {
     editBower(function() {
-      this.dependencies['normalize-css'] = '~2.1.3';
+      this.dependencies['normalize-css'] = '~3.0.0';
     });
   });
 
