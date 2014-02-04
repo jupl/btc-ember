@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+#### 0.6.1 (February 4, 2014)
 - Revert jQuery update for now
 
 ### 0.6.0 (February 4, 2014)
