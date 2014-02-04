@@ -215,7 +215,6 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 - [Ember](http://emberjs.com/)
 
 ### Utilities
-- [Prerender](https://prerender.io/)
 - [jQuery](http://jquery.com)
 - [Nib](http://visionmedia.github.io/nib/)
 - [Ember Data](https://github.com/emberjs/data)
