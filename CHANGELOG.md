@@ -4,7 +4,6 @@
 - Update BTC
   - Clean npm cache for `npm:clean`
   - Add structure to `server` directory
-  - Add Prerender support (server and middleware)
   - Update karma-chai-plugins
 
 #### 0.5.4 (February 1, 2014)
