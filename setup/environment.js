@@ -32,6 +32,9 @@ function devEnvironment(config) {
   var jsJoinTo = config.files.javascripts.joinTo;
   var cssJoinTo = config.files.stylesheets.joinTo;
 
+  // Do not use Ember's prod files in development
+  addIgnored(config, /ember(-data)?\.prod\.js$/);
+
   // Check if Mocha is installed. If not, ignore test
   if(!require('../bower.json').dependencies.mocha) {
     addIgnored(config, /^test/);
@@ -44,9 +47,6 @@ function devEnvironment(config) {
 
   // Add test css files
   cssJoinTo['test/stylesheets/test.css'] = /^bower_components[\\\/]mocha/;
-
-  // Do not use Ember's prod files in development
-  addIgnored(config, /ember(-data)?\.prod\.js$/);
 }
 
 /**
