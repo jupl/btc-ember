@@ -99,9 +99,6 @@ Add/remove packages to test browser code. Packages include Mocha/Chai/Sinon/etc.
 #### `add:sitetesting` / `rem:sitetesting`
 Add/remove packages to test site features. Packages include Mocha, Chai, WebDriverJS, etc. for NPM.
 
-#### `add:prerender` / `rem:prerender`
-Add/remove [Prerender](https://prerender.io/) to handle search crawling in JavaScript heavy applications. See the "Notes" section above for more information.
-
 #### `add:normalize` / `rem:normalize`
 Add/remove [normalize.css](http://necolas.github.io/normalize.css/) to ensure a consistent starting point in styling between different browsers.
 
@@ -249,4 +246,4 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 
 ### Core
 - [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.7.0
-- [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.7.1
+- [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.8.1
