@@ -1,4 +1,4 @@
-# Cinder Brunch 0.6.1
+# Cinder Brunch 0.7.0
 [<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
 [<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
 
@@ -90,6 +90,18 @@ Remove downloaded Bower dependencies. This is useful if you want to reinstall de
 ### Extras
 These commands add additional features/items to the project that are not included by default.
 
+#### `add:testing` / `rem:testing`
+Add/remove packages to test. See below for more details on code/site testing packages.
+
+#### `add:codetesting` / `rem:codetesting`
+Add/remove packages to test browser code. Packages include Mocha/Chai/Sinon/etc. for Bower and Karma-related packages for NPM.
+
+#### `add:sitetesting` / `rem:sitetesting`
+Add/remove packages to test site features. Packages include Mocha, Chai, WebDriverJS, etc. for NPM.
+
+#### `add:prerender` / `rem:prerender`
+Add/remove [Prerender](https://prerender.io/) to handle search crawling in JavaScript heavy applications. See the "Notes" section above for more information.
+
 #### `add:normalize` / `rem:normalize`
 Add/remove [normalize.css](http://necolas.github.io/normalize.css/) to ensure a consistent starting point in styling between different browsers.
 
@@ -180,7 +192,7 @@ Generate/destroy a test file with the given test name for testing the site. (ex:
 
 
 ### Testing
-Tests leverage [Mocha](http://visionmedia.github.io/mocha/), [Mocha as Promised](https://github.com/domenic/mocha-as-promised), and [Chai](http://chaijs.com/). Code and site testing is provided. Code testing adds [Sinon](http://sinonjs.org/) and [Sinon-Chai](https://github.com/domenic/sinon-chai).
+To enable testing, required packages must be added. Use `add:testing`/`add:codetesting`/`add:sitetesting` tasks to install dependencies via Bower/npm. Tests leverage [Mocha](http://visionmedia.github.io/mocha/), [Mocha as Promised](https://github.com/domenic/mocha-as-promised), and [Chai](http://chaijs.com/). Code and site testing is provided. Code testing adds [Sinon](http://sinonjs.org/) and [Sinon-Chai](https://github.com/domenic/sinon-chai).
 
 #### `test:all [codereporter=progress] [sitereporter=spec] [browsers=[browsers]]`
 Run all tests listed below once. For more information on reporters see below.
@@ -236,5 +248,5 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 ## Libraries
 
 ### Core
-- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.6.0
+- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.7.0
 - [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.7.1
