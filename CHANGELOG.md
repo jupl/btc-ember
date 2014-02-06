@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.7.0 (February 5, 2014)
 - Update BTC
   - Do not install Prerender packages by default
     - Autodetect if packages are available
