@@ -2,10 +2,6 @@
 
 ### 0.7.0 (February 5, 2014)
 - Update BTC
-  - Do not install Prerender packages by default
-    - Autodetect if packages are available
-  - Add tasks to install/uninstall Prerender packages
-  - Add PhantomJS as a dependency (could be used for Prerender)
   - Do not install code/site testing-related packages by default
   - Add tasks to install/uninstall code/site testing-related packages
   - Update Sinon Chai
