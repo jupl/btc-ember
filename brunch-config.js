@@ -14,7 +14,7 @@ exports.config = {
     javascripts: {
       joinTo: {
         'javascripts/app.js': /^app/,
-        'javascripts/vendor.js': /^(vendor|bower_components)/
+        'javascripts/vendor.js': /^(vendor|bower_components)(?!.+ember(-data)?\.prod\.js$)/
       },
       order: {
         before: ['app/initialize.js']
@@ -33,6 +33,22 @@ exports.config = {
         jquery: 'bower_components/jquery/jquery.js',
         ember: 'bower_components/ember/ember.js',
         handlebars: 'bower_components/handlebars/handlebars.js'
+      }
+    }
+  },
+
+  overrides: {
+    production: {
+      files: {
+        javascripts: {
+          joinTo: {
+            'javascripts/app.js': /^app/,
+            'javascripts/vendor.js': /^(vendor|bower_components)(?!.+ember(-data)?(?!\.prod)\.js$)/
+          },
+          order: {
+            before: ['app/initialize.js']
+          }
+        }
       }
     }
   },
