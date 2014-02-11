@@ -51,8 +51,8 @@ namespace('add', function() {
     var bow = JSON.parse(fs.readFileSync('bower.json'));
     bow.overrides['ember-data'] = {
       main: [
-        "ember-data.js",
-        "ember-data.prod.js"
+        'ember-data.js',
+        'ember-data.prod.js'
       ]
     };
     fs.writeFileSync('bower.json', JSON.stringify(bow, null, 2) + '\n');
