@@ -1,4 +1,4 @@
-# Cinder Brunch 0.7.0
+# Cinder Brunch 0.8.0
 [![Dependency Status](https://gemnasium.com/jupl/cinder-brunch.png)](https://gemnasium.com/jupl/cinder-brunch)
 
 
