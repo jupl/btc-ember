@@ -212,7 +212,7 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Libraries
 
 ### Core
-- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.9.1
+- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.9.2
 
 ### Languages
 - [Handlebars](http://handlebarsjs.com/)
