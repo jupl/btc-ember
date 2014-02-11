@@ -19,7 +19,6 @@ For a mobile/Cordova friendly variant, check out [this skeleton](https://github.
     │   ├── templates           # Handlebars templates and partials
     │   │   └── components      # Handlebars templates for Ember components
     │   ├── views               # Ember views
-    │   ├── app.js              # Configure main application
     │   ├── app.styl            # Application/page styling definition
     │   ├── base.styl           # Stylus variables and mixins for the application
     │   ├── initialize.js       # Bootstrap the application
