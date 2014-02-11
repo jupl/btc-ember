@@ -1,5 +1,18 @@
 # Changelog
 
+### 0.8.0 (February 11, 2014)
+- Enforce strict mode
+- Remove dashes in generators
+- Simplify Brunch config
+- Update BTC
+  - Remove Prerender server
+  - Add support for Mongoose/Passport/sessions
+  - Detect browsers in Karma
+  - Server refactoring
+  - Unify `add:codetesting` and `add:sitetesting` tasks
+  - Add scaffold to generate server model
+  - Add aliases to generator tasks
+
 ### 0.7.0 (February 5, 2014)
 - Update BTC
   - Do not install code/site testing-related packages by default

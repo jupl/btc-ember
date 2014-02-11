@@ -3,7 +3,7 @@
   "files": [
     {
       "from": "template.hbs.hbs",
-      "to": "app/templates/_{{#dasherize}}{{name}}{{/dasherize}}.hbs"
+      "to": "app/templates/_{{dasherize name}}.hbs"
     }
   ],
   "dependencies": []

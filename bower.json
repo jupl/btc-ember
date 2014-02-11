@@ -17,12 +17,6 @@
         "ember.prod.js"
       ]
     },
-    "ember-data": {
-      "main": [
-        "ember-data.js",
-        "ember-data.prod.js"
-      ]
-    },
     "handlebars": {
       "main": "handlebars.runtime.js"
     }

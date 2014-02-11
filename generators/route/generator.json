@@ -3,7 +3,7 @@
   "files": [
     {
       "from": "route.js.hbs",
-      "to": "app/routes/{{#dasherize}}{{name}}{{/dasherize}}.js"
+      "to": "app/routes/{{dasherize name}}.js"
     }
   ],
   "dependencies": []

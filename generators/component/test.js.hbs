@@ -1,0 +1,23 @@
+'use strict';
+
+describe('{{uppercamelize name}}Component', function() {
+  var {{camelize name}}Component;
+
+  beforeEach(function() {
+    Ember.run(function() {
+      App.reset();
+      {{camelize name}}Component = App.{{uppercamelize name}}Component.create();
+      {{camelize name}}Component.append();
+    });
+  });
+
+  it('', function() {
+
+  });
+
+  afterEach(function() {
+    Ember.run(function() {
+      {{camelize name}}Component.destroy();
+    });
+  });
+});

@@ -1,3 +1,12 @@
+'use strict';
+
+window.App = Ember.Application.create();
+
+// Temporary fix for ember-precompiler-brunch
+if(!window.module) {
+  window.module = {};
+}
+
 // Add Swag if available
 if(window.Swag) {
   Swag.registerHelpers();
@@ -8,22 +17,10 @@ if(window.FastClick) {
   new FastClick(document.body);
 }
 
-// If we are using Cordova, wait until device is ready
+// If running in Cordova, start app on deviceready instead
 if(window.cordova) {
-  document.addEventListener('deviceready', preInitialize, false);
-}
-else {
-  preInitialize();
-}
-
-// Start the real initializer
-function preInitialize() {
-  $(document).ready(initialize);
-}
-
-// Initialize the application
-function initialize() {
-  if(!Ember.testing) {
+  App.deferReadiness();
+  document.addEventListener('deviceready', function() {
     App.advanceReadiness();
-  }
+  }, false);
 }
