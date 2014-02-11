@@ -1,18 +1,13 @@
-var setup = require('./setup');
+'use strict';
 
-exports.config = setup({
-  modules: {
-    definition: false,
-    wrapper: function(path, code) { // Wrap app code in closures
-      if(/^app\//.test(path)) {
-        code = '\n(function() {\n' + code + '\n})();';
-      }
-      return code;
-    }
+exports.config = {
+  paths: {
+    public: 'public'
   },
 
   server: {
-    path: 'server'
+    path: 'server',
+    port: 3333
   },
 
   files: {
@@ -22,7 +17,7 @@ exports.config = setup({
         'javascripts/vendor.js': /^(vendor|bower_components)/
       },
       order: {
-        before: ['app/app.js']
+        before: ['app/initialize.js']
       }
     },
 
@@ -40,5 +35,15 @@ exports.config = setup({
         handlebars: 'bower_components/handlebars/handlebars.js'
       }
     }
+  },
+
+  modules: {
+    definition: false,
+    wrapper: function(path, code) {
+      if(/^app\//.test(path)) {
+        code = '\n(function() {\n' + code + '\n})();';
+      }
+      return code;
+    }
   }
-});
+};

@@ -1,1 +1,0 @@
-Ember.testing = true;

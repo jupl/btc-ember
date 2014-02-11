@@ -1,77 +1,75 @@
 # Cinder Brunch 0.7.0
-[<img src="https://david-dm.org/jupl/cinder-brunch.png"/>](https://david-dm.org/jupl/cinder-brunch)
-[<img src="https://david-dm.org/jupl/cinder-brunch/dev-status.png"/>](https://david-dm.org/jupl/cinder-brunch#info=devDependencies)
+[![Dependency Status](https://gemnasium.com/jupl/cinder-brunch.png)](https://gemnasium.com/jupl/cinder-brunch)
 
 
 ## Introduction
-Cinder Brunch is a skeleton for building [Ember.js](http://emberjs.com/) applications. This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), [Jake](https://github.com/mde/jake), and [PhantomJS](http://phantomjs.org/) to provide cross-platform tasks in a simple package. [EditorConfig](http://editorconfig.org/) is also provided to help with consistency. [Prerender](https://prerender.io/) can be easily enabled/configured for search engine crawling.
+Cinder Brunch is a skeleton for building [Ember.js](http://emberjs.com/) applications. This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), and [Jake](https://github.com/mde/jake) to provide cross-platform tasks in a simple package.
 
 For a mobile/Cordova friendly variant, check out [this skeleton](https://github.com/jupl/cinder-brunch/tree/cordova).
 
 
 ## File Structure
-    ├── app                 # App is built here. Look at Brunch for more info.
-    │   ├── assets          # Static files that are just copied
-    │   ├── components      # Ember components
-    │   ├── controller      # Ember controllers (regular, object, array)
-    │   ├── models          # Objects that represent data for Ember
-    │   ├── routes          # Ember routes
-    │   ├── styles          # Stylus stylesheets
-    │   ├── templates       # Handlebars templates and partials
-    │   │   └── components  # Handlebars templates for Ember components
-    │   ├── views           # Ember views
-    │   ├── app.js          # Configure main application
-    │   ├── app.styl        # Application/page styling definition
-    │   ├── base.styl       # Stylus variables and mixins for the application
-    │   ├── initialize.js   # Bootstrap the application
-    │   ├── router.js       # Define routes to map
-    │   └── view-helpers.js # User-defined Handlebars helpers
-    ├── bower_components    # Packages installed by Bower
-    ├── generators          # Generators used by Scaffolt
-    ├── jakelib             # Unified set of tasks for development
-    ├── public              # Generated final product
-    ├── server              # Server configuration
-    │   ├── prerender       # Configuration for Prerender server/middleware
-    │   └── routes          # Custom routes/services/proxies/etc. (server-side)
-    ├── setup               # Add configuration options to brunch-config
-    ├── test                # Test-related files
-    │   ├── assets          # Static assets to run code tests manually
-    │   ├── code            # Code-based tests for Karma/manual
-    │   ├── site            # Site-based tests for Mocha and WebDriverJS
-    │   ├── karma.conf.js   # Karma configuration for code tests
-    │   ├── mocha.opts      # Default options for site tests
-    │   └── setup.js        # Configuration for site tests
-    ├── vendor              # 3rd party JS/CSS libraries
-    ├── .editorconfig       # EditorConfig definition file for coding styles
-    ├── bower.json          # Listing for Bower dependencies to download
-    ├── brunch-config.js    # Brunch app build configuration
-    └── package.json        # Project dependencies and configuration
+    ├── app                     # Assets/code/styles for the client application
+    │   ├── assets              # Static files copied without modification
+    │   ├── components          # Ember components
+    │   ├── controller          # Ember controllers (regular, object, array)
+    │   ├── models              # Objects that represent data for Ember
+    │   ├── routes              # Ember routes
+    │   ├── styles              # Stylus stylesheets
+    │   ├── templates           # Handlebars templates and partials
+    │   │   └── components      # Handlebars templates for Ember components
+    │   ├── views               # Ember views
+    │   ├── app.js              # Configure main application
+    │   ├── app.styl            # Application/page styling definition
+    │   ├── base.styl           # Stylus variables and mixins for the application
+    │   ├── initialize.js       # Bootstrap the application
+    │   ├── router.js           # Define routes to map
+    │   └── view-helpers.js     # User-defined Handlebars helpers
+    ├── generators              # Generators used by Scaffolt
+    ├── jakelib                 # Unified set of tasks for development
+    ├── public                  # Compiled client-side assets
+    ├── server                  # Server configuration
+    │   ├── models              # Persistent server-side model configuration
+    │   ├── passport            # Passport integration
+    │   ├── routes              # Custom routes/proxies/etc. (server-side)
+    │   ├── config.js           # Configuration options
+    │   ├── prerender.js        # Prerender middleware integration
+    │   └── session.js          # Session configuration
+    ├── test                    # Test-related files
+    │   ├── code                # Code tests that run with Karma
+    │   ├── site                # Site tests that run with WebDriverJS
+    │   ├── mocha.opts          # Default options for site testing
+    │   └── setup.js            # Initialization for site testing
+    ├── vendor                  # Additional 3rd party JS/CSS libraries
+    ├── .editorconfig           # EditorConfig definitions for coding styles
+    ├── bower.json              # Listing for Bower dependencies to download
+    ├── brunch-config.js        # Brunch app build configuration
+    ├── karma.conf.js           # Karma runner setup
+    └── package.json            # Node project dependencies and configuration
 
 
 ## Requirements
 - [node.js](http://nodejs.org)
 - [Jake](https://github.com/mde/jake#installing-with-npm) (required for development)
+- [MongoDB](http://www.mongodb.org/) (if using server extras)
 
 
 ## Setup
 1. Install node.js.
 2. If using Windows and leveraging Bower, install [Git](http://git-scm.com/download/win).
-3. If doing development, install Jake.
+3. If working on development, install Jake.
 4. Open a terminal window and navigate to the project directory.
 5. Execute the command `npm install` to install all package dependencies.
+6. If server is not going to just serve static assets, run the `add:serverextras` task.
 
 
 ## Notes
-If you want to just run Brunch without using Jake tasks, just use either `web:dev` or `web:prod` for the environment. (ex: `brunch watch --server --env web:prod`)
 
+### `npm start` / `npm test`
 One-line commands are provided for convenience as well for those that want to start running things as quickly as possible by installing depedencies automatically. Use `npm start` to download non-development packages and run the `server:prod` task. Use `npm test` to download all packages and run the `test:all` task.
 
-Prerender is not enabled by default.
-- To enable/disable Prerender see tasks `add:prerender`/`rem:prerender`.
-- By default it is configured to use a local Prerender server that is set up.
-- To modify the local Prerender server see `server/prerender/server.js`.
-- To modify Prerender middleware see `server/prerender/index.js`.
-- For more information visit their [website](https://prerender.io/).
+### Server
+Out of the box the server provided simply serves static assets with support for HTML5 push state. Extensible server extras can be added to support models and sessions with [Mongoose](http://mongoosejs.com/), authentication with [Passport](http://passportjs.org/), and caching with [Prerender](https://prerender.io/). To add extras, see the `add:serverextras` task.
 
 Handlebars templates are precompiled when building the application. In addition, the full development of Ember is used for `dev` while the production version (no debug/assertion code) is used for `prod`.
 
@@ -99,16 +97,10 @@ Remove downloaded Bower dependencies. This is useful if you want to reinstall de
 These commands add additional features/items to the project that are not included by default.
 
 #### `add:testing` / `rem:testing`
-Add/remove packages to test. See below for more details on code/site testing packages.
+Add/remove packages require to run code and site testing.
 
-#### `add:codetesting` / `rem:codetesting`
-Add/remove packages to test browser code. Packages include Mocha/Chai/Sinon/etc. for Bower and Karma-related packages for NPM.
-
-#### `add:sitetesting` / `rem:sitetesting`
-Add/remove packages to test site features. Packages include Mocha, Chai, WebDriverJS, etc. for NPM.
-
-#### `add:prerender` / `rem:prerender`
-Add/remove [Prerender](https://prerender.io/) to handle search crawling in JavaScript heavy applications. See the "Notes" section above for more information.
+#### `add:serverextras` / `rem:serverextras`
+Add/remove extra packages to the server so that it does more than just serve static assets. For more information see notes above.
 
 #### `add:normalize` / `rem:normalize`
 Add/remove [normalize.css](http://necolas.github.io/normalize.css/) to ensure a consistent starting point in styling between different browsers.
@@ -121,64 +113,66 @@ Add/remove [Swag](http://elving.github.io/swag/) to/from the project to add addi
 
 
 ### Scaffolding
-Scaffolding commands are available in the form of `gen` and `del`. (syntax ex: `jake gen codetest=user`) Multiple scaffolds can be specified in a single command, as well as separating names with commas. (ex: `jake gen codetest=test1,test2 sitetest=test3`) Unit test files are automatically generated for models, controllers, components, and views.
+Scaffolding commands are available in the form of `generate` and `destroy`. (syntax ex: `jake generate codetest=user`) Multiple scaffolds can be specified in a single command, as well as separating names with commas. (ex: `jake generate codetest=test1,test2 sitetest=test3`) The following aliases are also available: `g`, `gen`, `d`, `del`. (ex: `jake g codetest=user`) Unit test files are automatically generated for models, controllers, components, and views.
 
-#### `gen` / `del`
+#### `generate` / `destroy`
 List available scaffolds.
 
-#### `gen model=[name]` / `del model=[name]`
+#### `generate model=[name]` / `destroy model=[name]`
 Generate/destroy an [Ember class](http://emberjs.com/guides/object-model/classes-and-instances/) that will be used to represent a model. (Read this [article](http://eviltrout.com/2013/03/23/ember-without-data.html) for more information.)
 
-#### `gen data=[name]` / `del data=[name]`
+#### `generate data=[name]` / `destroy data=[name]`
 Generate/destroy an [Ember Data model](http://emberjs.com/guides/models/defining-models/) that will be used to represent a model. Ember Data is required. (see `add:data` task)
 
-#### `gen template=[name]` / `del template=[name]`
+#### `generate template=[name]` / `destroy template=[name]`
 Generate/destroy a Handlebars [template](http://emberjs.com/guides/templates/handlebars-basics/). You can specify subdirectories. (ex: `jake gen template=products/index`)
 
-#### `gen partial=[name]` / `del partial=[name]`
+#### `generate partial=[name]` / `destroy partial=[name]`
 Generate/destroy a [partial](http://emberjs.com/guides/templates/rendering-with-helpers/#toc_the-code-partial-code-helper) Handlebars template.
 
-#### `gen component=[name]` / `del component=[name]`
+#### `generate component=[name]` / `destroy component=[name]`
 Generate/destroy an [Ember component](http://emberjs.com/guides/components/defining-a-component/) and Handlebars template.
 
-#### `gen view=[name]` / `del view=[name]`
+#### `generate view=[name]` / `destroy view=[name]`
 Generate/destroy an [Ember view](http://emberjs.com/guides/views/defining-a-view/).
 
-#### `gen route=[name]` / `del route=[name]`
+#### `generate route=[name]` / `destroy route=[name]`
 Generate/destroy an [Ember route](http://emberjs.com/guides/routing/defining-your-routes/).
 
-#### `gen controller=[name]` / `del controller=[name]`
+#### `generate controller=[name]` / `destroy controller=[name]`
 Generate/destroy an [Ember controller](http://emberjs.com/guides/controllers/).
 
-#### `gen objcontroller=[name]` / `del objcontroller=[name]`
+#### `generate objcontroller=[name]` / `destroy objcontroller=[name]`
 Generate/destroy an [Ember object controller](http://emberjs.com/guides/controllers/representing-a-single-model-with-objectcontroller/).
 
-#### `gen arrcontroller=[name]` / `del arrcontroller=[name]`
+#### `generate arrcontroller=[name]` / `destroy arrcontroller=[name]`
 Generate/destroy an [Ember array controller](http://emberjs.com/guides/controllers/representing-multiple-models-with-arraycontroller/). Specify the name in singular form, as it will automatically be pluralized.
 
-#### `gen style=[name]` / `del style=[name]`
+#### `generate style=[name]` / `destroy style=[name]`
 Generate/destroy a Stylus stylesheet file.
 
-#### `gen codetest=[name]` / `del codetest=[name]`
+#### `generate codetest=[name]` / `destroy codetest=[name]`
 Generate/destroy a test file with the given test name for testing code. (ex: unit testing)
 
-#### `gen sitetest=[name]` / `del sitetest=[name]`
-Generate/destroy a test file with the given test name for testing the site. (ex: functional testing)
+#### `generate sitetest=[name]` / `destroy sitetest=[name]`
+Generate/destroy a test file with the given test name for testing the site with WebDriverJS.
 
 
 ### Testing
-To enable testing, required packages must be added. Use `add:testing`/`add:codetesting`/`add:sitetesting` tasks to install dependencies via Bower/npm. Tests leverage [Mocha](http://visionmedia.github.io/mocha/), [Mocha as Promised](https://github.com/domenic/mocha-as-promised), and [Chai](http://chaijs.com/). Code and site testing is provided. Code testing adds [Sinon](http://sinonjs.org/) and [Sinon-Chai](https://github.com/domenic/sinon-chai).
+Tests leverage [Mocha](http://visionmedia.github.io/mocha/), [Mocha as Promised](https://github.com/domenic/mocha-as-promised), and [Chai](http://chaijs.com/). Code and site testing is provided. Code testing adds [Sinon](http://sinonjs.org/) and [Sinon-Chai](https://github.com/domenic/sinon-chai). Testing packages will automatically be installed if not available.
 
-#### `test:all [codereporter=progress] [sitereporter=spec] [browsers=[browsers]]`
+#### `test:all [codereporter=[codereporter]] [sitereporter=[sitereporter]]`
 Run all tests listed below once. For more information on reporters see below.
 
-#### `test:code [reporter=progress] [watch=false] [browsers=[browsers]]`
-Run code-based tests (ex. unit tests) using Karma. Karma is preconfigured to run with [PhantomJS](http://phantomjs.org/). A Karma reporter can be specified with the `reporter` option. You can also override the browsers to run with with the `browsers` option. (ex: `browsers=Chrome,Firefox,Safari`) If you run this task with `watch=true` Karma will auto-run on file changes. Otherwise by default Karma runs once. You can also run the server while watching files with `watch=server`. In addition, if you run a build (see below) with the `dev` environment the tests are included with a reporter under `test` to run in browsers. (ex. visit `http://locahost:[port]/test`)
+#### `test:code [reporter=[reporter]] [watch=false]`
+Run code-based tests (ex. unit tests) using Karma. Karma is preconfigured to run with all available browsers on the system. ([PhantomJS](http://phantomjs.org/) is included). Karma reporter can be specified with the `reporter` option. If you run this task with `watch=true` Karma will auto-run on file changes. Otherwise by default Karma runs once. You can also run the server while watching files with `watch=server`.
 
-#### `test:site [reporter=spec] [watch=false]`
-Run site-based tests (ex. system tests) using Mocha, PhantomJS, and WebDriverJS. A Brunch server is started up temporarily to interact with the site. A Mocha reporter can be specified with the `reporter` option. If you run this task with `watch=true` Mocha will auto-run on file changes with [nodemon](http://remy.github.io/nodemon/). Otherwise by default Mocha runs once. The global method `getDriver` is provided to get a setup and built driver. WebDriverJS' use of Promises can be combined with Mocha as Promised to handle asynchronous behavior easily. ex:
+#### `test:site [reporter=[reporter]] [watch=false]`
+Run site-based tests (ex. system tests) using PhantomJS and WebDriverJS. A server is started up temporarily to interact with the site. A Mocha reporter can be specified with the `reporter` option. If you run this task with `watch=true` Mocha will auto-run on file changes with [nodemon](http://remy.github.io/nodemon/). Otherwise by default Mocha runs once. The global method `getDriver` is provided to get a setup and built driver. WebDriverJS' use of Promises can be combined with Mocha as Promised to handle asynchronous behavior easily. ex:
 
 ```js
+'use strict';
+
 describe('Sample', function() {
   var driver;
 
@@ -186,12 +180,13 @@ describe('Sample', function() {
     driver = getDriver();
   });
 
+  beforeEach(function() {
+    return driver.get(baseUrl);
+  });
+
   it('Has a proper title', function() {
-    return driver.get('http://localhost:3333').then(function() {
-      return driver.getTitle();
-    })
-    .then(function(title) {
-      expect(title).to.equal('Brunch Toolchain');
+    return driver.getTitle().then(function(title) {
+      title.should.equal('Cinder Brunch');
     });
   });
 
@@ -203,7 +198,7 @@ describe('Sample', function() {
 
 
 ### Building
-These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS, plus include source maps as well as tests under the `test` folder. Use `prod` mode to minify/uglify JS/CSS as well as omit source maps and tests. If any Bower dependencies have not been downloaded yet, Bower will first download them.
+These commands are used to assemble the application, generating the necessary JS/CSS and adding assets. Use `dev` mode to keep readable JS/CSS, plus include source maps. Use `prod` mode to minify/uglify JS/CSS as well as omit source maps and tests. If any Bower dependencies have not been downloaded yet, Bower will first download them.
 
 #### `build:[mode]`
 Assemble the application once.
@@ -212,13 +207,13 @@ Assemble the application once.
 Assemble the application and continue to watch for changes. Rebuild every time a change is detected.
 
 #### `server:[mode]`
-Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser. [Prerender](https://prerender.io/) server and middleware is set up if available. This build uses the `web` environment.
+Assemble the application and continue to watch for changes. Rebuild every time a change is detected. Also, the application is served locally to open with a browser.
 
 
 ## Libraries
 
 ### Core
-- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.8.1
+- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.9.0
 
 ### Languages
 - [Handlebars](http://handlebarsjs.com/)

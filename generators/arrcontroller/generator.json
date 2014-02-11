@@ -1,0 +1,14 @@
+{
+  "description": "Ember array controller",
+  "files": [
+    {
+      "from": "controller.js.hbs",
+      "to": "app/controllers/{{dasherize pluralName}}.js"
+    },
+    {
+      "from": "test.js.hbs",
+      "to": "test/code/controllers/{{dasherize pluralName}}.js"
+    }
+  ],
+  "dependencies": []
+}
