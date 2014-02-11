@@ -48,6 +48,14 @@ namespace('add', function() {
 
   desc('Add Ember Data (Handlebar helpers)');
   task('data', function() {
+    var bow = JSON.parse(fs.readFileSync('bower.json'));
+    bow.overrides['ember-data'] = {
+      main: [
+        "ember-data.js",
+        "ember-data.prod.js"
+      ]
+    };
+    fs.writeFileSync('bower.json', JSON.stringify(bow, null, 2) + '\n');
     return bower.execute('install', '--allow-root', '--save',
       'ember-data#~1.0.0');
   });
@@ -92,6 +100,9 @@ namespace('rem', function() {
 
   desc('Remove Ember Data');
   task('data', function() {
+    var bow = JSON.parse(fs.readFileSync('bower.json'));
+    delete bow.overrides['ember-data'];
+    fs.writeFileSync('bower.json', JSON.stringify(bow, null, 2) + '\n');
     return bower.execute('uninstall', '--allow-root', '--save', 'ember-data');
   });
 });
