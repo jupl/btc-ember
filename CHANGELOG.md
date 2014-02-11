@@ -1,12 +1,12 @@
 # Changelog
 
 ### WIP
+- Enforce strict mode
+- Remove dashes in generators
+- Simplify Brunch config
 - Update BTC
   - Remove Prerender server
   - Add support for Mongoose/Passport/sessions
-  - Simplify Brunch config
-  - Enforce strict mode
-  - Remove dashes in generators
   - Detect browsers in Karma
   - Server refactoring
   - Unify `add:codetesting` and `add:sitetesting` tasks
