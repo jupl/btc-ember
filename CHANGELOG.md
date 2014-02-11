@@ -4,6 +4,10 @@
 - Enforce strict mode
 - Remove dashes in generators
 - Simplify Brunch config
+- Update Cordova Brunch
+  - Simplify server
+  - No need to copy config.xml anymore
+  - Rename `cordova:gen` to `cordova:init`
 - Update BTC
   - Remove Prerender server
   - Add support for Mongoose/Passport/sessions

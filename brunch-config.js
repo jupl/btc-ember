@@ -50,6 +50,11 @@ exports.config = {
           }
         }
       }
+    },
+    cordova: {
+      paths: {
+        public: 'cordova/www'
+      }
     }
   },
 

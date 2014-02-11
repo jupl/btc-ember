@@ -9,6 +9,10 @@ namespace('clean', function() {
   task('web', function() {
     jake.rmRf(config.paths.public, {silent: true});
   });
+
+  task('cordova', function() {
+    jake.rmRf(config.overrides.cordova.paths.public, {silent: true});
+  });
 });
 
 // General task to run Scaffolt.
