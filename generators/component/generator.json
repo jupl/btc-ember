@@ -3,15 +3,15 @@
   "files": [
     {
       "from": "component.js.hbs",
-      "to": "app/components/{{#dasherize}}{{name}}{{/dasherize}}.js"
+      "to": "app/components/{{dasherize name}}.js"
     },
     {
       "from": "template.hbs.hbs",
-      "to": "app/templates/components/{{#dasherize}}{{name}}{{/dasherize}}.hbs"
+      "to": "app/templates/components/{{dasherize name}}.hbs"
     },
     {
       "from": "test.js.hbs",
-      "to": "test/code/components/{{#dasherize}}{{name}}{{/dasherize}}.js"
+      "to": "test/code/components/{{dasherize name}}.js"
     }
   ],
   "dependencies": []

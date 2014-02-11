@@ -1,0 +1,14 @@
+{
+  "description": "Ember object controller",
+  "files": [
+    {
+      "from": "controller.js.hbs",
+      "to": "app/controllers/{{dasherize name}}.js"
+    },
+    {
+      "from": "test.js.hbs",
+      "to": "test/code/controllers/{{dasherize name}}.js"
+    }
+  ],
+  "dependencies": []
+}
