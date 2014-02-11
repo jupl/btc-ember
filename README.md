@@ -236,5 +236,5 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 ## Libraries
 
 ### Core
-- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.8.0
+- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.8.1
 - [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.9.0
