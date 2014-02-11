@@ -1,6 +1,6 @@
 # Changelog
 
-### WIP
+### 0.8.0 (February 11, 2014)
 - Enforce strict mode
 - Remove dashes in generators
 - Simplify Brunch config
