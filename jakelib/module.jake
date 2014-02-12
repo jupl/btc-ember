@@ -42,14 +42,7 @@ namespace('add', function() {
     });
   });
 
-  desc('Add Swag (Handlebar helpers)');
-  task('swag', function() {
-    editBower(function() {
-      this.dependencies['swag'] = '~0.5.0';
-    });
-  });
-
-  desc('Add Ember Data (Handlebar helpers)');
+  desc('Add Ember Data (data persistence library)');
   task('data', function() {
     editBower(function() {
       this.dependencies['ember-data'] = '~1.0.0';
@@ -59,6 +52,13 @@ namespace('add', function() {
           'ember-data.prod.js'
         ]
       };
+    });
+  });
+
+  desc('Add Swag (Handlebar helpers)');
+  task('swag', function() {
+    editBower(function() {
+      this.dependencies['swag'] = '~0.5.0';
     });
   });
 });
@@ -96,18 +96,18 @@ namespace('rem', function() {
     });
   });
 
-  desc('Remove Swag');
-  task('swag', function() {
-    editBower(function() {
-      delete this.dependencies['swag'];
-    });
-  });
-
   desc('Remove Ember Data');
   task('data', function() {
     editBower(function() {
       delete this.dependencies['ember-data'];
       delete this.overrides['ember-data'];
+    });
+  });
+
+  desc('Remove Swag');
+  task('swag', function() {
+    editBower(function() {
+      delete this.dependencies['swag'];
     });
   });
 });
