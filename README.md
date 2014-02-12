@@ -1,4 +1,4 @@
-# Cinder Brunch 0.8.0
+# Cinder Brunch 0.8.3
 [![Dependency Status](https://gemnasium.com/jupl/cinder-brunch.png)](https://gemnasium.com/jupl/cinder-brunch)
 
 
@@ -236,5 +236,5 @@ Assemble the application, compile, and deploy to an emulator for the specified d
 ## Libraries
 
 ### Core
-- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.8.1
+- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.8.3
 - [Cordova Brunch](https://github.com/jupl/cordova-brunch) 0.9.1

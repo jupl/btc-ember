@@ -1,5 +1,9 @@
 # Changelog
 
+#### 0.8.3 (February 11, 2014)
+- Update BTC
+  - Revert to editing `package.json` and `bower.json`
+
 #### 0.8.1 (February 11, 2014)
 - Update BTC
   - Simplify scaffold-related tasks
