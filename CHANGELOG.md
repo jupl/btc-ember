@@ -1,5 +1,8 @@
 # Changelog
 
+#### WIP
+- Update Ember to 1.4.0
+
 #### 0.8.3 (February 11, 2014)
 - Update BTC
   - Server extras are installed to `dependencies`, not `devDependencies`
