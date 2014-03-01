@@ -2,6 +2,7 @@
 
 #### WIP
 - Update Ember to 1.4.0
+- Remove IIFEs, set strict mode once at initialize.js
 
 #### 0.8.3 (February 11, 2014)
 - Update BTC

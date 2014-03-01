@@ -55,11 +55,6 @@ exports.config = {
 
   modules: {
     definition: false,
-    wrapper: function(path, code) {
-      if(/^app\//.test(path)) {
-        code = '\n(function() {\n' + code + '\n})();';
-      }
-      return code;
-    }
+    wrapper: false
   }
 };
