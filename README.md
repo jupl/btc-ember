@@ -3,7 +3,7 @@
 
 
 ## Introduction
-Cinder Brunch is a skeleton for building [Ember.js](http://emberjs.com/) applications. This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), and [Jake](https://github.com/mde/jake) to provide cross-platform tasks in a simple package.
+Cinder Brunch is a skeleton for building [Ember.js](http://emberjs.com/) applications. This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), and [Jake](https://github.com/mde/jake) to provide cross-platform tasks in a simple package. Additional packages are provided for building out the server with [MongoDB](http://www.mongodb.org/).
 
 Available variants:
 - [Cordova](https://github.com/jupl/cinder-brunch/tree/cordova)
@@ -30,6 +30,12 @@ Available variants:
     ├── jakelib                 # Unified set of tasks for development
     ├── public                  # Compiled client-side assets
     ├── server                  # Server configuration
+    │   ├── models              # Persistent server-side model configuration
+    │   ├── passport            # Passport integration
+    │   ├── routes              # Custom routes/proxies/etc. (server-side)
+    │   ├── config.js           # Configuration options
+    │   ├── prerender.js        # Prerender middleware integration
+    │   └── session.js          # Session configuration
     ├── test                    # Test-related files
     │   ├── code                # Code tests that run with Karma
     │   ├── site                # Site tests that run with WebDriverJS
@@ -45,11 +51,12 @@ Available variants:
 
 ## Requirements
 - [node.js](http://nodejs.org)
+- [MongoDB](http://www.mongodb.org/)
 - [Jake](https://github.com/mde/jake#installing-with-npm) (required for development)
 
 
 ## Setup
-1. Install node.js.
+1. Install node.js and MongoDB.
 2. If using Windows install [Git](http://git-scm.com/download/win).
 3. If working on development, install Jake.
 4. Open a terminal window and navigate to the project directory.
@@ -62,7 +69,11 @@ Available variants:
 One-line commands are provided for convenience as well for those that want to start running things as quickly as possible by installing depedencies automatically. Use `npm start` to download non-development packages and run the `server:prod` task. Use `npm test` to download all packages and run both the `test:install` and `test:all` tasks.
 
 ### Server
-A basic push state server serving static assets is included by default. You can expand/enhance the server as needed for services and to create a more ambitious application.
+Out of the box the server provides:
+- Serve static assets with support for HTML5 push state
+- Models and sessions with [Mongoose](http://mongoosejs.com/)
+- Authentication with [Passport](http://passportjs.org/)
+- Caching with [Prerender](https://prerender.io/).
 
 ### Ember
 Handlebars templates are precompiled when building the application. In addition, the full development of Ember is used for `dev` while the production version (no debug/assertion code) is used for `prod`.
@@ -139,6 +150,9 @@ Generate/destroy an [Ember array controller](http://emberjs.com/guides/controlle
 #### `generate style=[name]` / `destroy style=[name]`
 Generate/destroy a Stylus stylesheet file.
 
+#### `generate servermodel=[name]` / `destroy servermodel=[name]`
+Generate/destroy a Mongoose model.
+
 #### `generate codetest=[name]` / `destroy codetest=[name]`
 Generate/destroy a test file with the given test name for testing code. (ex: unit testing)
 
@@ -204,16 +218,5 @@ Assemble the application and continue to watch for changes. Rebuild every time a
 ## Libraries
 
 ### Core
-- [Brunch Toolchain](https://github.com/jupl/brunch-toolchain) 0.10.2
-
-### Languages
-- [Handlebars](http://handlebarsjs.com/)
-- [Stylus](http://learnboost.github.io/stylus/)
-
-### Framework
-- [Ember](http://emberjs.com/)
-
-### Utilities
-- [jQuery](http://jquery.com)
-- [Nib](http://visionmedia.github.io/nib/)
-- [Ember Data](https://github.com/emberjs/data)
+- [Cinder Brunch](https://github.com/jupl/cinder-brunch) 0.9.0
+- [BTC Serverpack](https://github.com/jupl/btc-serverpack) 0.1.0
