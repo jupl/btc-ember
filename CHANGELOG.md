@@ -1,5 +1,19 @@
 # Changelog
 
+### 0.9.0 (March 1, 2014)
+- Update Ember to 1.4.0
+- Remove IIFEs, set strict mode once at initialize.js
+- Do not use pushState by default for this skeleton
+- Update BTC
+  - Remove server extras (let the user customize as needed, will go to a separate repo)
+  - Simplify generator-related tasks by reusing code
+  - Installing test-related modules does not modify `package.json`
+  - Install Bower components automatically after running `npm install`
+  - Rename paths for generated JS/CSS
+  - For index.html, use relative paths by default
+  - Add BrowserSync as an option for autoreload
+  - Update paths for code and site testing
+
 #### 0.8.3 (February 11, 2014)
 - Update BTC
   - Server extras are installed to `dependencies`, not `devDependencies`
