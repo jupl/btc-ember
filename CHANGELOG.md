@@ -4,6 +4,9 @@
 - Update Ember to 1.4.0
 - Remove IIFEs, set strict mode once at initialize.js
 - Do not use pushState by default for this skeleton
+- Update Cordova Brunch
+  - Update Cordova to 3.4
+  - Update FastClick to 1.0.0
 - Update BTC
   - Remove server extras (let the user customize as needed, will go to a separate repo)
   - Simplify generator-related tasks by reusing code
