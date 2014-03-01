@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+### 0.9.0 (March 1, 2014)
 - Update Ember to 1.4.0
 - Remove IIFEs, set strict mode once at initialize.js
 - Do not use pushState by default for this skeleton
