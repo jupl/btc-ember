@@ -5,10 +5,6 @@
 ## Introduction
 Cinder Brunch is a skeleton for building [Ember.js](http://emberjs.com/) applications. This skeleton leverages [node](http://nodejs.org), [Brunch](http://brunch.io), [Scaffolt](https://github.com/paulmillr/scaffolt), [Bower](http://bower.io/), and [Jake](https://github.com/mde/jake) to provide cross-platform tasks in a simple package. Additional packages are provided for building out the server with [MongoDB](http://www.mongodb.org/).
 
-Available variants:
-- [Cordova](https://github.com/jupl/cinder-brunch/tree/cordova)
-- [Serverpack](https://github.com/jupl/cinder-brunch/tree/server)
-
 
 ## File Structure
     ├── app                     # Assets/code/styles for the client application
