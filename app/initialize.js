@@ -12,10 +12,9 @@ if(window.Swag) {
   Swag.registerHelpers();
 }
 
-// Check if Ember data is available
-// If it is set the primary key to be _id based on mongo's output
+// If using Ember Data, change primary key to work with MongoDB's defaults
 if(window.DS){
   App.ApplicationSerializer = DS.RESTSerializer.extend({
-      primaryKey: '_id'
+    primaryKey: '_id'
   });
 }

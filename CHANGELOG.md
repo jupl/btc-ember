@@ -1,6 +1,7 @@
 # Changelog
 
 ### 0.9.0 (March 1, 2014)
+- Fix compatibility with Ember Data and MongoDB (credit to [wannabefro](https://github.com/wannabefro))
 - Update Ember to 1.4.0
 - Remove IIFEs, set strict mode once at initialize.js
 - Update BTC
