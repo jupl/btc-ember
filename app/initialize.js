@@ -13,7 +13,7 @@ if(window.Swag) {
 }
 
 // If using Ember Data, change primary key to work with MongoDB's defaults
-if(window.DS){
+if(window.DS) {
   App.ApplicationSerializer = DS.RESTSerializer.extend({
     primaryKey: '_id'
   });
