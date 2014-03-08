@@ -1,5 +1,10 @@
 # Changelog
 
+#### 0.9.1 (March 7, 2014)
+- Update BTC
+  - Update Express.js
+  - Include Normalize.css by default
+
 ### 0.9.0 (March 1, 2014)
 - Fix compatibility with Ember Data and MongoDB (credit to [wannabefro](https://github.com/wannabefro))
 - Update Ember to 1.4.0
