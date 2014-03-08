@@ -1,6 +1,9 @@
 # Changelog
 
 #### 0.9.1 (March 7, 2014)
+- Update BTC Cordova
+  - Update Hammer.js
+    - Update how Hammer and jquery.hammer is added to Bower
 - Update BTC
   - Update Express.js
   - Include Normalize.css by default
