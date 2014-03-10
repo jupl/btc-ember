@@ -63,4 +63,4 @@ Handlebars templates are precompiled when building the application. In addition,
 
 ### Core
 - [BTC Ember](https://github.com/jupl/btc-ember) 0.9.2
-- [BTC Cordova](https://github.com/jupl/btc-cordova) 0.10.3
+- [BTC Cordova](https://github.com/jupl/btc-cordova) 0.10.4
