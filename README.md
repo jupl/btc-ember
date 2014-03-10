@@ -1,4 +1,4 @@
-# [BTC Ember](http://jupl.github.io/btc/ember/) 0.9.1
+# [BTC Ember](http://jupl.github.io/btc/ember/) 0.9.2
 [![Dependency Status](https://gemnasium.com/jupl/btc-ember.png)](https://gemnasium.com/jupl/btc-ember)
 
 This is a project template for [Ember.js](http://emberjs.com/) applications. Visit [the site](http://jupl.github.io/btc/) for more information.
@@ -65,7 +65,7 @@ Handlebars templates are precompiled when building the application. In addition,
 ## Libraries
 
 ### Core
-- [BTC](https://github.com/jupl/btc) 0.10.3
+- [BTC](https://github.com/jupl/btc) 0.10.4
 
 ### Languages
 - [Handlebars](http://handlebarsjs.com/)
