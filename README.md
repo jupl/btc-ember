@@ -65,7 +65,7 @@ Handlebars templates are precompiled when building the application. In addition,
 ## Libraries
 
 ### Core
-- [BTC](https://github.com/jupl/btc) 0.10.3
+- [BTC](https://github.com/jupl/btc) 0.10.4
 
 ### Languages
 - [Handlebars](http://handlebarsjs.com/)
