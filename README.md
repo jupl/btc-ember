@@ -1,4 +1,4 @@
-# [BTC Ember](http://jupl.github.io/btc/ember/) 0.9.1
+# [BTC Ember](http://jupl.github.io/btc/ember/) 0.9.2
 [![Dependency Status](https://gemnasium.com/jupl/btc-ember.png)](https://gemnasium.com/jupl/btc-ember)
 
 This is a project template for [Ember.js](http://emberjs.com/) applications with Cordova. Visit [the site](http://jupl.github.io/btc/) for more information.
@@ -62,5 +62,5 @@ Handlebars templates are precompiled when building the application. In addition,
 ## Libraries
 
 ### Core
-- [BTC Ember](https://github.com/jupl/btc-ember) 0.9.1
+- [BTC Ember](https://github.com/jupl/btc-ember) 0.9.2
 - [BTC Cordova](https://github.com/jupl/btc-cordova) 0.10.3
