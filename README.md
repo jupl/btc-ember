@@ -75,4 +75,4 @@ Handlebars templates are precompiled when building the application. In addition,
 
 ### Core
 - [BTC Ember](https://github.com/jupl/btc-ember) 0.9.2
-- [BTC Serverpack](https://github.com/jupl/btc-serverpack) 0.1.1
+- [BTC Serverpack](https://github.com/jupl/btc-serverpack) 0.1.2

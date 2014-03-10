@@ -1,6 +1,8 @@
 # Changelog
 
 #### 0.9.2 (March 10, 2014)
+- Update BTC Serverpack
+  - Update passport-local
 - Update BTC
   - Update BrowserSync
   - Update Bluebird
