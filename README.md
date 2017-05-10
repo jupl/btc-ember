@@ -1,4 +1,6 @@
 # [BTC Ember](http://jupl.github.io/btc/ember/) 0.9.2
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/jupl/btc-ember.svg)](https://greenkeeper.io/)
 [![Dependency Status](https://gemnasium.com/jupl/btc-ember.png)](https://gemnasium.com/jupl/btc-ember)
 
 This is a project template for [Ember.js](http://emberjs.com/) applications. Visit [the site](http://jupl.github.io/btc/) for more information.
